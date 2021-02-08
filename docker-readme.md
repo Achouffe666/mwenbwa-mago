@@ -2,8 +2,6 @@
 
 This is a generated README by the [BeCode CLI tool](https://github.com/becodeorg/cli).
 
-If you are completely new to Docker we recommend you to read the [Docker Survival Guide](https://github.com/becodeorg/cli/tree/develop/docs/docker-survival-guide).
-
 ## Install `docker` & `docker-compose`
 
 ### For macOS
@@ -18,11 +16,11 @@ Follow the procedure on [this page](https://docs.docker.com/docker-for-windows/i
 
 #### Home version
 
-To use docker on Windows Home, you need to use the [Docker Toolbox](https://docs.docker.com/toolbox/overview/), which use VirtualBox to run docker on your machine.  
+To use docker on Windows Home, you need to use the [Docker Toolbox](https://docs.docker.com/toolbox/overview/), which use VirtualBox to run docker on your machine.
 
 ##### ⚠️ Important notes for Windows Home version
 
-The Docker Toolbox and the VirtualBox env will change two important things when you use docker : 
+The Docker Toolbox and the VirtualBox env will change two important things when you use docker :
 
 1. The host to access the containers isn't `localhost`, but the IP `192.168.99.100` (by default)
 2. Due to the nature of VirtualBox, the *volumes* binding between your local system and the containers are kinda limited. Please ensure that **your working folder** is inside the `C:/Users` path.
@@ -41,7 +39,7 @@ To test your installation, run the command `docker run hello-world`.
 When starting your env for the first time, run the following command in yhour repo:
 
 	docker-compose build
-	
+
 > **NOTE:** thus you don't need to run this command each time, it may be useful to *re*build your services when you change the configuration of your services.
 
 Then, simply run the following command to get started:
@@ -51,7 +49,6 @@ Then, simply run the following command to get started:
 The details for all your services is detailed bellow.
 
 ## Your services
-
 ### Langage: Node.js
 
 #### What is Node.js?
@@ -73,7 +70,7 @@ Node.js internally uses the Google V8 JavaScript engine to execute code; a large
 
 Place your JS files in `./bin` folder, access it your browser at address [localhost](http://localhost).
 
-The container use [nodemon](https://github.com/remy/nodemon) to watch and reload your app on changes.  
+The container use [nodemon](https://github.com/remy/nodemon) to watch and reload your app on changes.
 You can change the `nodemon` command within your **docker-compose.yml** file according your needs.
 
 **IMPORTANT:** your entry point **must** be defined in your **package.json** `scripts.start` property, and your app's server **must** listen the `12345` port.

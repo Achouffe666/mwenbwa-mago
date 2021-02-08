@@ -1,30 +1,32 @@
 ---
   version: "3"
-  services: 
-    node: 
+  services:
+    node:
       image: "becodeorg/node"
-      environment: 
+      environment:
         NODE_ENV: "development"
-      volumes: 
+        APP_PORT: 12345
+      volumes:
         - "./package.json:/src/app/package.json"
         - "./node_modules:/src/app/node_modules"
         - "./bin:/src/app/bin"
-      expose: 
+      expose:
         - "12345"
         - "9229"
-      ports: 
+      ports:
         - "80:12345"
         - "9229"
-      command: "nodemon --inspect=0.0.0.0:9229 --watch bin"
-    mongo: 
+      command: "nodemon --inspect=0.0.0.0:9229 --watch bin/server bin/server/index.js"
+    mongo:
       image: "mongo"
-      restart: "unless-stopped"
-      ports: 
+      restart: "always"
+      ports:
         - "27017:27017"
-      volumes: 
+      volumes:
         - "mongo_db:/data/db"
-      environment: 
+        - "./_dev:/usr/dump"
+      environment:
         MONGO_INITDB_ROOT_USERNAME: "dev"
         MONGO_INITDB_ROOT_PASSWORD: "dev"
-  volumes: 
-    mongo_db: 
+  volumes:
+    mongo_db:
