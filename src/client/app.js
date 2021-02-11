@@ -5,7 +5,7 @@
  * coded by leny@BeCode
  * started at 18/05/2020
  */
-
+import "./assets/style.css";
 import * as React from "react";
 import ReactDOM from "react-dom";
 
