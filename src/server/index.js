@@ -17,7 +17,7 @@ app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 app.get("/hello", (req, res) => {
     console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
-    res.send("Hello, World!");
+    res.send("Hello, Worlds!!");
 });
 
 app.listen(APP_PORT, () =>
