@@ -50,6 +50,7 @@ const Register = () => (
                 placeholder={"Birthday"}
                 required
             />
+            <button type={"submit"}>{"Submit"}</button>
         </form>
     </div>
 );
