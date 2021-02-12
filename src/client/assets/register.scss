@@ -1,0 +1,34 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;padding: 0;
+}
+
+body {
+  background-color: #333;
+}
+
+.main {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+}
+
+input {
+  height: 35px;
+  border: none;
+  border: 2px solid grey;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+
+
+
