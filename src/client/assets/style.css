@@ -33,6 +33,10 @@ body {
 }
 .navbar__bloc--title {
   padding-left: 5rem;
+  padding-top: 2rem;
+}
+.navbar__bloc__icon {
+  padding-right: 1rem;
 }
 .navbar__bloc--item {
   display: none;
@@ -56,6 +60,7 @@ body {
       justify-content: space-around;
   width: 25%;
   padding-right: 5rem;
+  padding-top: 2rem;
 }
 
 footer {
@@ -144,6 +149,7 @@ footer {
 }
 
 .menu {
+  font-family: Arial, Helvetica, sans-serif;
   height: 40rem;
   width: 15rem;
   position: absolute;
@@ -169,6 +175,63 @@ footer {
 .menu__myPhoto {
   width: 10rem;
   margin-top: 2rem;
-  margin-left: 3rem;
+  padding-left: 5rem;
+}
+.menu__user {
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
+}
+.menu__profil {
+  position: absolute;
+  z-index: 30;
+  border-radius: 1rem;
+  background-color: #FFCC29;
+  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
+  background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
+  color: white;
+  font-size: 1.5rem;
+  border: 1px solid #FFCC29;
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+  position: center;
+  margin-top: 5rem;
+}
+.menu__profil__bloc {
+  position: relative;
+  height: 2rem;
+  width: 10rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+.menu__link__bloc {
+  margin-top: 8rem;
+}
+.menu__link {
+  background-color: white;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  height: 2.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  opacity: 50%;
+}
+.menu__link__letters {
+  margin-top: 7rem;
+}
+.menu__link__letter {
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+.menu__link__letter--a {
+  padding-bottom: 3rem;
+}
+.menu__link__letter--b {
+  padding-bottom: 2.7rem;
+}
+.menu__link__letter--c {
+  padding-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

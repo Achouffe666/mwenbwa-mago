@@ -1,7 +1,7 @@
 import * as React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEye} from "@fortawesome/free-solid-svg-icons";
-import myPhoto from "../assets/images/myProfil.jpg";
+import Menu from "./menu";
 
 const Picture = () => (
     <div className={"picture__home"}>
@@ -30,16 +30,8 @@ const Picture = () => (
             />
             <div className={"picture__home__register"}>{"Register"}</div>
         </form>
-        <div className={"menu"}>
-            <div className={"menu__filter"}>
-                <img className={"menu__myPhoto"} src={myPhoto} alt={"photo"} />
-                <p className={"menu__user"}>{"Maud Leleux"}</p>
-                <input
-                    type={"text"}
-                    className={"menu__profil"}
-                    value={"Profil"}
-                />
-            </div>
+        <div>
+            <Menu />
         </div>
     </div>
 );

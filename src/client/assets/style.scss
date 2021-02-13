@@ -30,6 +30,11 @@ body{
   &__bloc--title
   {
     padding-left: 5rem;
+    padding-top: 2rem;
+  }
+  &__bloc__icon
+  {
+    padding-right: 1rem;
   }
   &__bloc--item
       {
@@ -45,6 +50,7 @@ body{
     justify-content: space-around;
     width: 25%;
     padding-right: 5rem;
+    padding-top: 2rem;
   }
   }
 //________________________________footer_____________________________//
@@ -141,6 +147,8 @@ footer
 }
 //________________________menu___________________
 .menu{
+  
+  font-family:Arial, Helvetica, sans-serif;
   height: 40rem;
   width: 15rem;
   position: absolute;
@@ -165,6 +173,68 @@ footer
   {
     width: 10rem;
     margin-top: 2rem;
-    margin-left: 3rem;
+    padding-left: 5rem;
   }
+&__user
+{
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
+}
+&__profil
+  {
+    position: absolute;
+    z-index: 30;
+    border-radius: 1rem;
+    background-color: $primary-color;
+    background: $gradientYellow;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid $primary-color;
+    height: 2rem;
+    width: 10rem;
+    text-align:center;
+    position: center;
+    margin-top: 5rem;
+    &__bloc
+    {
+      position:relative;
+      height: 2rem;
+      width: 10rem;
+      margin:auto;
+      margin-top: 1rem;
+    }
+  }
+&__link__bloc
+{
+  margin-top: 8rem;
+}
+&__link
+{
+  background-color:white;
+  backdrop-filter: blur(0px);
+  height: 2.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  opacity: 50%;
+  &__letters
+  {
+    margin-top: 7rem;
+  }
+  &__letter
+  {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    &--a{
+      padding-bottom: 3rem;
+    }
+    &--b{
+      padding-bottom: 2.7rem;
+    }
+    &--c{
+      padding-bottom: 3rem;
+    }
+  }
+}
 }

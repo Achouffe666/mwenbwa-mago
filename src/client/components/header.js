@@ -11,13 +11,25 @@ const HeaderYellow = () => (
         </div>
         <div className={"navbar__bloc--home"}>
             <div>
-                <FontAwesomeIcon icon={faHome} alt={"home_icon"} />
+                <FontAwesomeIcon
+                    className={"navbar__bloc__icon"}
+                    icon={faHome}
+                    alt={"home_icon"}
+                />
             </div>
             <div>
-                <FontAwesomeIcon icon={faSearch} alt={"home_icon"} />
+                <FontAwesomeIcon
+                    className={"navbar__bloc__icon"}
+                    icon={faSearch}
+                    alt={"home_icon"}
+                />
             </div>
             <div>
-                <FontAwesomeIcon icon={faBars} alt={"home_icon"} />
+                <FontAwesomeIcon
+                    className={"navbar__bloc__icon"}
+                    icon={faBars}
+                    alt={"home_icon"}
+                />
             </div>
         </div>
         <div className={"navbar__bloc--item"}>
