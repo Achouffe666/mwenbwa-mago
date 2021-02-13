@@ -5,7 +5,6 @@
  * coded by leny@BeCode
  * started at 18/05/2020
  */
-
 import express from "express";
 import path from "path";
 
@@ -16,7 +15,7 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 app.get("/hello", (req, res) => {
-    console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
+    //console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
     res.send("Hello, World!");
 });
 

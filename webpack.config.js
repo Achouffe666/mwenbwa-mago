@@ -73,6 +73,13 @@ module.exports = env => {
                     ],
                 },
                 {
+                    test: /\.svg$/,
+                    loader: 'svg-inline-loader',
+                    options: {
+                        name: 'images/[hash]-[name].[ext]',
+                      },
+                },
+                {
                     test: /\.js$/,
                     exclude: [/node_modules/],
                     use: [

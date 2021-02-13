@@ -1,9 +1,170 @@
-$body-color: red;
-
-body {
-  background-color: $body-color;
+*{
+  margin: 0;
+  border:0;
+  box-sizing: border-box;
 }
-h1
+
+$body-color: white;
+$primary-color: #FFCC29;
+$gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
+body{
+  background-image: url("./images/groot_original.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+//_____________________________________header_______________________________//
+
+.navbar{
+  background-color: $primary-color;
+  background: $gradientYellow;
+  color: white;
+  font-size: 2rem;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  &__bloc--title
+  {
+    padding-left: 5rem;
+  }
+  &__bloc--item
+      {
+        display:none;
+        flex-direction:row;
+        justify-content: space-around;
+        padding-right: 1rem;
+      }
+  &__bloc--home
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25%;
+    padding-right: 5rem;
+  }
+  }
+//________________________________footer_____________________________//
+
+footer
 {
-  color: green;
+  background-color: $primary-color;
+  background: $gradientYellow;
+  height: 5rem;
+  width: 100%;
+  
+}
+
+//_____________________________________home____________________________//
+
+.picture__home
+{
+ 
+ height: 45rem;
+ position: relative;
+ &__bloc
+ {
+   
+   display: flex;
+   flex-direction: column;
+   padding-top: 20rem;
+ }
+
+ &__input
+ {
+   font-size: 1.5rem;
+   color: grey;
+   margin: auto;
+   border-radius: 0.5rem;
+   border: none;
+   width: 15rem;
+   height: 2rem;
+   padding-left: 2rem;
+   margin-bottom: 2rem;
+ }
+ &__password
+ {
+   width: 15rem;
+   height: 2rem;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   border-radius:0.5rem;
+   margin-bottom: 2rem;
+ }
+ &__input__password
+ {
+  font-size: 1.5rem;
+  color: grey;
+  margin: auto;
+  width: 11rem;
+  height: 2rem;
+  padding-left: 1rem;
+  
+ }
+ &__button
+ {
+   border: none;
+   border-radius: 1rem;
+   background-color: $primary-color;
+   background: $gradientYellow;
+   height: 2rem;
+   width: 10rem;
+   margin: auto;
+   font-size: 1.5rem;
+   color: white;
+ }
+ &__register
+{
+  text-decoration: underline;
+  color: #b28f1e;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0);
+  padding-top: 1rem;
+  margin: auto;
+}
+}
+
+.icon
+{
+  &__password
+  {
+    font-size: 1.5rem;
+    color: grey;
+    margin: auto;
+  }
+}
+//________________________menu___________________
+.menu{
+  height: 40rem;
+  width: 15rem;
+  position: absolute;
+  padding-top: 5rem;
+  backdrop-filter: blur(20px);
+  top: 0;
+  right:0;
+  display: block;
+  &__filter
+  {
+    background-color: white;
+    opacity: 50%;
+    height: 40rem;
+    width: 15rem;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    z-index:20;
+    top: 0;
+    right:0;
+  }
+&__myPhoto
+  {
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
 }
