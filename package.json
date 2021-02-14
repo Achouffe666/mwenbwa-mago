@@ -52,9 +52,12 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
+    "leaflet": "^1.7.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-leaflet": "^3.1.0"
   },
   "husky": {
     "hooks": {

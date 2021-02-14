@@ -9,9 +9,6 @@ import "./assets/style.css";
 import * as React from "react";
 import ReactDOM from "react-dom";
 
-//import HeaderYellow from "./components/header";
-import Picture from "./components/home";
-import DisplayMenu from "./components/header";
+import HomeBackGround from "./components/home_background";
 
-ReactDOM.render(<DisplayMenu />, document.querySelector("#header"));
-ReactDOM.render(<Picture />, document.querySelector("#main"));
+ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
