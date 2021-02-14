@@ -9,6 +9,6 @@ import "./assets/style.css";
 import * as React from "react";
 import ReactDOM from "react-dom";
 
-import HomeBackGround from "./components/home_background";
+import HomeBackGround from "./components/homebackground";
 
 ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
