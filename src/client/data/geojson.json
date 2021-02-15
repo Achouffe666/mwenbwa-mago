@@ -1,0 +1,13 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [5.57341, 50.6446]
+  },
+  "properties": {
+    "name": "Cottage home",
+    "price": 249999,
+    "bedrooms": 2,
+    "bathrooms": 1
+  }
+}
