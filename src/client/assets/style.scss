@@ -1,1 +1,244 @@
+<<<<<<< HEAD
 
+=======
+*{
+  margin: 0;
+  border:0;
+  box-sizing: border-box;
+}
+
+$body-color: white;
+$primary-color: #FFCC29;
+$gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
+body{
+  background-image: url("./images/groot_original.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+//_____________________________________header_______________________________//
+
+.navbar{
+  background-color: $primary-color;
+  background: $gradientYellow;
+  color: white;
+  font-size: 2rem;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  &__bloc--title
+  {
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
+  &__bloc__icon
+  {
+    padding-right: 1rem;
+  }
+  &__bloc--item
+      {
+        display:none;
+        flex-direction:row;
+        justify-content: space-around;
+        padding-right: 1rem;
+      }
+  &__bloc--home
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25%;
+    padding-right: 5rem;
+    padding-top: 2rem;
+  }
+  }
+//________________________________footer_____________________________//
+
+footer
+{
+  background-color: $primary-color;
+  background: $gradientYellow;
+  height: 5rem;
+  width: 100%;
+  
+}
+
+//_____________________________________home____________________________//
+
+.picture__home
+{
+ 
+ height: 45rem;
+ position: relative;
+ &__bloc
+ {
+   
+   display: flex;
+   flex-direction: column;
+   padding-top: 20rem;
+ }
+
+ &__input
+ {
+   font-size: 1.5rem;
+   color: grey;
+   margin: auto;
+   border-radius: 0.5rem;
+   border: none;
+   width: 15rem;
+   height: 2rem;
+   padding-left: 2rem;
+   margin-bottom: 2rem;
+ }
+ &__password
+ {
+   width: 15rem;
+   height: 2rem;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   border-radius:0.5rem;
+   margin-bottom: 2rem;
+ }
+ &__input__password
+ {
+  font-size: 1.5rem;
+  color: grey;
+  margin: auto;
+  width: 11rem;
+  height: 2rem;
+  padding-left: 1rem;
+  
+ }
+ &__button
+ {
+   border: none;
+   border-radius: 1rem;
+   background-color: $primary-color;
+   background: $gradientYellow;
+   height: 2rem;
+   width: 10rem;
+   margin: auto;
+   font-size: 1.5rem;
+   color: white;
+ }
+ &__register
+{
+  text-decoration: underline;
+  color: #b28f1e;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0);
+  padding-top: 1rem;
+  margin: auto;
+}
+}
+
+.icon
+{
+  &__password
+  {
+    font-size: 1.5rem;
+    color: grey;
+    margin: auto;
+  }
+}
+//________________________menu___________________
+.menu{
+  
+  font-family:Arial, Helvetica, sans-serif;
+  height: 40rem;
+  width: 15rem;
+  position: absolute;
+  padding-top: 5rem;
+  backdrop-filter: blur(20px);
+  top: 0;
+  right:0;
+  display: none;
+  &__filter
+  {
+    background-color: white;
+    opacity: 50%;
+    height: 40rem;
+    width: 15rem;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    z-index:20;
+    top: 0;
+    right:0;
+  }
+&__myPhoto
+  {
+    width: 10rem;
+    margin-top: 2rem;
+    padding-left: 5rem;
+  }
+&__user
+{
+  padding-left: 3.5rem;
+  font-size: 1.5rem;
+}
+&__profil
+  {
+    position: absolute;
+    z-index: 30;
+    border-radius: 1rem;
+    background-color: $primary-color;
+    background: $gradientYellow;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid $primary-color;
+    height: 2rem;
+    width: 10rem;
+    text-align:center;
+    position: center;
+    margin-top: 5rem;
+    &__bloc
+    {
+      position:relative;
+      height: 2rem;
+      width: 10rem;
+      margin:auto;
+      margin-top: 1rem;
+    }
+  }
+&__link__bloc
+{
+  margin-top: 8rem;
+}
+&__link
+{
+  background-color:white;
+  backdrop-filter: blur(0px);
+  height: 2.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  opacity: 50%;
+  &__letters
+  {
+    margin-top: 7rem;
+  }
+  &__letter
+  {
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    &--a{
+      padding-bottom: 3rem;
+    }
+    &--b{
+      padding-bottom: 2.7rem;
+    }
+    &--c{
+      padding-bottom: 3rem;
+    }
+  }
+}
+}
+>>>>>>> ff3fe6ae2624a169d99123b90dfcfe3322d5d7d4

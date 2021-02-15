@@ -12,3 +12,9 @@ import ReactDOM from "react-dom";
 import Register from "./components/register";
 
 ReactDOM.render(<Register />, document.querySelector("#app"));
+//import HeaderYellow from "./components/header";
+import Picture from "./components/home";
+import DisplayMenu from "./components/header";
+
+ReactDOM.render(<DisplayMenu />, document.querySelector("#header"));
+ReactDOM.render(<Picture />, document.querySelector("#main"));
