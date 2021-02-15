@@ -9,6 +9,9 @@ import "./assets/style.css";
 import * as React from "react";
 import ReactDOM from "react-dom";
 
-import HelloWorld from "./components/hello";
+//import HeaderYellow from "./components/header";
+import Picture from "./components/home";
+import DisplayMenu from "./components/header";
 
-ReactDOM.render(<HelloWorld />, document.querySelector("#app"));
+ReactDOM.render(<DisplayMenu />, document.querySelector("#header"));
+ReactDOM.render(<Picture />, document.querySelector("#main"));
