@@ -239,4 +239,37 @@ footer {
   width: 100%;
   height: 100vh;
 }
+
+/* MARKER CLUSTERS */
+.custom-marker-cluster-single {
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
+
+.custom-marker-cluster-single div {
+  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+}
+
+.custom-marker-cluster-small {
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
+
+.custom-marker-cluster-small div {
+  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+}
+
+.custom-marker-cluster-medium {
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
+
+.custom-marker-cluster-medium div {
+  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+}
+
+.custom-marker-cluster-large {
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
+
+.custom-marker-cluster-large div {
+  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+}
 /*# sourceMappingURL=style.css.map */
