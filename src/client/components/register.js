@@ -1,7 +1,24 @@
 import * as React from "react";
 import Image from "../assets/images/user.svg";
 
-const Register = () => (
+
+// console.log('Hello db')
+
+// let firstClient = new Register({
+//     firstname: "Austin",
+//     lastname: "Benard",
+//     password: "HelloWorld",
+//     email: "austin@benard.be"
+// })
+// firstClient.save()
+// .then(doc =>{
+//     console.log(doc)
+// })
+// .catch(err=>{
+//     console.log(err)
+// })
+
+const Register_field = () => (
     <div className={"main"}>
         <div className={"picture"}>
             <img src={Image} />
@@ -52,12 +69,11 @@ const Register = () => (
                 required
             />
             <div className={"button"}>
-                <button type={"submit"} className={"btn"}>
-                    {"Create Account"}
-                </button>
+                <input type={"submit"} className={"submit"} value={'submit'}/>
+               
             </div>
         </form>
     </div>
 );
 
-export default Register;
+export default Register_field;
