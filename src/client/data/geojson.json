@@ -1,13 +1,29 @@
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [5.57341, 50.6446]
+[{
+    "type": "Feature",
+    "id":13,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [50.6440, 5.57339]
+    },
+    "properties": {
+      "name": "Cottage home",
+      "price": 249999,
+      "bedrooms": 2,
+      "bathrooms": 1
+    }
   },
-  "properties": {
-    "name": "Cottage home",
-    "price": 249999,
-    "bedrooms": 2,
-    "bathrooms": 1
+  {
+    "type": "Feature",
+    "id": 15,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [50.6446, 5.57341]
+    },
+    "properties": {
+      "name": "Cottage bungalow",
+      "price": 249999,
+      "bedrooms": 2,
+      "bathrooms": 1
+    }
   }
-}
+]

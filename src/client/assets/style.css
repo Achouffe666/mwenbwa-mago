@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-.navbar {
+_____________________________________header_______________________________ .navbar {
   background-color: #FFCC29;
   background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
@@ -31,14 +31,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.navbar__bloc--title {
+_____________________________________header_______________________________ .navbar__bloc--title {
   padding-left: 5rem;
   padding-top: 2rem;
 }
-.navbar__bloc__icon {
+_____________________________________header_______________________________ .navbar__bloc__icon {
   padding-right: 1rem;
 }
-.navbar__bloc--item {
+_____________________________________header_______________________________ .navbar__bloc--item {
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -48,7 +48,7 @@
       justify-content: space-around;
   padding-right: 1rem;
 }
-.navbar__bloc--home {
+_____________________________________header_______________________________ .navbar__bloc--home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@
   padding-top: 2rem;
 }
 
-footer {
+________________________________footer_____________________________ footer {
   background-color: #FFCC29;
   background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
@@ -71,11 +71,11 @@ footer {
   width: 100%;
 }
 
-.picture__home {
+_____________________________________home____________________________ .picture__home {
   height: 45rem;
   position: relative;
 }
-.picture__home__bloc {
+_____________________________________home____________________________ .picture__home__bloc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +85,7 @@ footer {
           flex-direction: column;
   padding-top: 20rem;
 }
-.picture__home__input {
+_____________________________________home____________________________ .picture__home__input {
   font-size: 1.5rem;
   color: grey;
   margin: auto;
@@ -96,7 +96,7 @@ footer {
   padding-left: 2rem;
   margin-bottom: 2rem;
 }
-.picture__home__password {
+_____________________________________home____________________________ .picture__home__password {
   width: 15rem;
   height: 2rem;
   margin: auto;
@@ -111,7 +111,7 @@ footer {
   border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
-.picture__home__input__password {
+_____________________________________home____________________________ .picture__home__input__password {
   font-size: 1.5rem;
   color: grey;
   margin: auto;
@@ -119,7 +119,7 @@ footer {
   height: 2rem;
   padding-left: 1rem;
 }
-.picture__home__button {
+_____________________________________home____________________________ .picture__home__button {
   border: none;
   border-radius: 1rem;
   background-color: #FFCC29;
@@ -131,7 +131,7 @@ footer {
   font-size: 1.5rem;
   color: white;
 }
-.picture__home__register {
+_____________________________________home____________________________ .picture__home__register {
   text-decoration: underline;
   color: #b28f1e;
   font-size: 1.5rem;
@@ -148,7 +148,7 @@ footer {
   margin: auto;
 }
 
-.menu {
+________________________menu___________________ .menu {
   font-family: Arial, Helvetica, sans-serif;
   height: 40rem;
   width: 15rem;
@@ -160,7 +160,7 @@ footer {
   right: 0;
   display: none;
 }
-.menu__filter {
+________________________menu___________________ .menu__filter {
   background-color: white;
   opacity: 50%;
   height: 40rem;
@@ -172,16 +172,16 @@ footer {
   top: 0;
   right: 0;
 }
-.menu__myPhoto {
+________________________menu___________________ .menu__myPhoto {
   width: 10rem;
   margin-top: 2rem;
   padding-left: 5rem;
 }
-.menu__user {
+________________________menu___________________ .menu__user {
   padding-left: 3.5rem;
   font-size: 1.5rem;
 }
-.menu__profil {
+________________________menu___________________ .menu__profil {
   position: absolute;
   z-index: 30;
   border-radius: 1rem;
@@ -197,17 +197,17 @@ footer {
   position: center;
   margin-top: 5rem;
 }
-.menu__profil__bloc {
+________________________menu___________________ .menu__profil__bloc {
   position: relative;
   height: 2rem;
   width: 10rem;
   margin: auto;
   margin-top: 1rem;
 }
-.menu__link__bloc {
+________________________menu___________________ .menu__link__bloc {
   margin-top: 8rem;
 }
-.menu__link {
+________________________menu___________________ .menu__link {
   background-color: white;
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
@@ -217,25 +217,25 @@ footer {
   padding-top: 0.5rem;
   opacity: 50%;
 }
-.menu__link__letters {
+________________________menu___________________ .menu__link__letters {
   margin-top: 7rem;
 }
-.menu__link__letter {
+________________________menu___________________ .menu__link__letter {
   font-size: 1.5rem;
   text-align: center;
   color: black;
 }
-.menu__link__letter--a {
+________________________menu___________________ .menu__link__letter--a {
   padding-bottom: 3rem;
 }
-.menu__link__letter--b {
+________________________menu___________________ .menu__link__letter--b {
   padding-bottom: 2.7rem;
 }
-.menu__link__letter--c {
+________________________menu___________________ .menu__link__letter--c {
   padding-bottom: 3rem;
 }
 
-.leaflet-container {
+________________________________Map ________________________ .leaflet-container {
   width: 100%;
   height: 100vh;
 }

@@ -14,7 +14,7 @@ $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1
   overflow: hidden;
 }
 
-//_____________________________________header_______________________________//
+_____________________________________header_______________________________
 
 .navbar{
   background-color: $primary-color;
@@ -53,7 +53,7 @@ $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1
     padding-top: 2rem;
   }
   }
-//________________________________footer_____________________________//
+________________________________footer_____________________________
 
 footer
 {
@@ -64,7 +64,7 @@ footer
   
 }
 
-//_____________________________________home____________________________//
+_____________________________________home____________________________
 
 .picture__home
 {
@@ -145,7 +145,7 @@ footer
     margin: auto;
   }
 }
-//________________________menu___________________
+________________________menu___________________
 .menu{
   
   font-family:Arial, Helvetica, sans-serif;
@@ -238,36 +238,36 @@ footer
   }
 }
 }
-//________________________________Map ________________________//
+________________________________Map ________________________
 .leaflet-container { 
   width: 100%; 
   height: 100vh;
 }
 /* MARKER CLUSTERS */
-.custom-marker-cluster-single {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
-}
-.custom-marker-cluster-single div {
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
-}
+ .custom-marker-cluster-single {
+   background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+ }
+ .custom-marker-cluster-single div {
+   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+ }
 
-.custom-marker-cluster-small {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+ .custom-marker-cluster-small {
+     background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
 }
-.custom-marker-cluster-small div {
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
-}
+ .custom-marker-cluster-small div {
+   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+ }
 
-.custom-marker-cluster-medium {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
-}
-.custom-marker-cluster-medium div {
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
-}
+ .custom-marker-cluster-medium {
+   background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+ }
+ .custom-marker-cluster-medium div {
+   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+ }
 
-.custom-marker-cluster-large {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
-}
-.custom-marker-cluster-large div {
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
-}
+ .custom-marker-cluster-large {
+   background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+ }
+ .custom-marker-cluster-large div {
+   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+ }
