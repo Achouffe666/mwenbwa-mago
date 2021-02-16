@@ -43,13 +43,13 @@ function DisplayMenu() {
                     />
                 </div>
             </div>
-            <div className={"navbar__bloc--item"}>
+            {/* <div className={"navbar__bloc--item"}>
                 <div>{"Profil"}</div>
                 <div>{"Play"}</div>
                 <div>{"LeaderBoard"}</div>
                 <div>{"Gamelog"}</div>
                 <div>{"TodoList"}</div>
-            </div>
+            </div> */}
         </div>
     );
 }
