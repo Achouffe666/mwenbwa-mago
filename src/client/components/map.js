@@ -33,7 +33,10 @@ class MyMap extends Component {
         // };
         return (
             <div>
-                <MapContainer center={position} zoom={13}>
+                <MapContainer
+                    style={{height: "100vh"}}
+                    center={position}
+                    zoom={13}>
                     <TileLayer
                         attribution={
                             "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
