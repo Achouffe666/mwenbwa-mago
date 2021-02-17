@@ -9,6 +9,7 @@ import "leaflet/dist/leaflet.css";
 import "./assets/style.scss";
 import * as React from "react";
 import ReactDOM from "react-dom";
+import "./assets/style.css";
 
 import HomeBackGround from "./components/homebackground";
 //import MyMap from "./components/map";
