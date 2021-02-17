@@ -13,9 +13,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .main .picture img {
+  .main .picture {
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    border: solid 1px black;
+    display: flex;
+    border-radius: 50%;
+    margin: 15px; }
+    .main .picture img {
+      border-radius: 50%;
+      background-color: silver;
+      border: 10px white solid; }
 
 label {
   display: block;
@@ -34,6 +42,17 @@ input {
 .button {
   display: flex;
   justify-content: center; }
+  .button input {
+    border-radius: 10px;
+    color: white;
+    width: 75%;
+    background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 700; }
+  .button :hover {
+    background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
+    cursor: pointer; }
   .button .btn {
     border-radius: 15px;
     font-size: larger;
