@@ -9,6 +9,9 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
 import "./assets/style.css";
+// import {BrowserRouter} from "react-router-dom";
+// import DisplayMenu from "../client/components/layout/header";
+//import HomeBackGround from "./components/home/homebackground";
 
 import HomeBackGround from "./components/home/homebackground";
 // import Register from "./components/register";

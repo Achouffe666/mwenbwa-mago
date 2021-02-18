@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome, faSearch, faBars} from "@fortawesome/free-solid-svg-icons";
+import Menu from "../layout/menu";
 
 function DisplayMenu() {
     const [open, setOpen] = useState(false);
-
     function openMenu() {
         if (open === false) {
             setOpen(true);
-            document.querySelector(".menu").style.display = "block";
+            document.querySelector(".menu").style.display = "flex";
         } else if (open === true) {
             setOpen(false);
             document.querySelector(".menu").style.display = "none";
@@ -43,12 +43,8 @@ function DisplayMenu() {
                     />
                 </div>
             </div>
-            <div className={"navbar__bloc--item"}>
-                <div>{"Profil"}</div>
-                <div>{"Play"}</div>
-                <div>{"LeaderBoard"}</div>
-                <div>{"Gamelog"}</div>
-                <div>{"TodoList"}</div>
+            <div>
+                <Menu />
             </div>
         </div>
     );
