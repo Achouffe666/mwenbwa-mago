@@ -29,7 +29,6 @@ const Register_field = () => (
             <input
                 type={"password"}
                 id={"password"}
-                name={"password"}
                 placeholder={"Password"}
                 required
             />
