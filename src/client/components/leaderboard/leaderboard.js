@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const leaf_icon = "../../assets/images/leaf.png";
-const tree_icon = "";
+const tree_icon = "../../assets/images/tree.png";
 
 const LeaderBoard = () => (
     <div className={"leaderBoard-main"}>
@@ -22,7 +22,7 @@ const LeaderBoard = () => (
                             <img src={tree_icon} width={"25px"} />
                         </td>
                         <td>
-                            <img src={leaf_icon} width={"25px"} />{" "}
+                            <img src={leaf_icon} width={"25px"} />
                         </td>
                         <div className={"line"} />
                     </tr>
