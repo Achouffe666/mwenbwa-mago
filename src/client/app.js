@@ -10,8 +10,8 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import "./assets/style.css";
 
-//import HomeBackGround from "./components/homebackground";
-import MyMap from "./components/map/map";
+import HomeBackGround from "./components/home/homebackground";
+//import MyMap from "./components/map/map";
 
-//ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
-ReactDOM.render(<MyMap />, document.querySelector("#main"));
+ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
+//ReactDOM.render(<MyMap />, document.querySelector("#main"));
