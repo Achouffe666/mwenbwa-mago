@@ -5,6 +5,7 @@ import "leaflet/dist/leaflet.css";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import MarkerGeo from "./marker";
+import Menu from "../layout/menu";
 
 const MyMap = () => {
     const position = [50.6446, 5.57341];
@@ -21,28 +22,38 @@ const MyMap = () => {
     //       popup.setContent(html)
     //       layer.bindPopup(popup)
     //     }
+    const mapStyle = {
+        height: "71vh",
+    };
 
     return (
         <div>
-            <MapContainer
-                style={{height: "100vh"}}
-                center={position}
-                zoom={17}
-                minZoom={12}
-                maxZoom={18}>
-                <TileLayer
-                    attribution={
-                        "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
-                    }
-                    url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}
-                />
-                <FeatureGroup ref={groupRef} name={"Homes"}>
-                    <Marker position={position} />
-                    <MarkerClusterGroup ref={clusterRef}>
-                        <MarkerGeo />
-                    </MarkerClusterGroup>
-                </FeatureGroup>
-            </MapContainer>
+            <div id={"contentMap"}>
+                <MapContainer
+                    style={mapStyle}
+                    center={position}
+                    zoom={17}
+                    minZoom={12}
+                    maxZoom={18}>
+                    <TileLayer
+                        attribution={
+                            "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+                        }
+                        url={
+                            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        }
+                    />
+                    <FeatureGroup ref={groupRef} name={"Homes"}>
+                        <Marker position={position} />
+                        <MarkerClusterGroup ref={clusterRef}>
+                            <MarkerGeo />
+                        </MarkerClusterGroup>
+                    </FeatureGroup>
+                </MapContainer>
+            </div>
+            <div>
+                <Menu />
+            </div>
         </div>
     );
 };

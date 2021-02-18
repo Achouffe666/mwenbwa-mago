@@ -13,7 +13,7 @@ const Picture = () => (
             />
             <div className={"picture__home__password"}>
                 <input
-                    type={"text"}
+                    type={"password"}
                     className={"picture__home__input__password"}
                     placeholder={"PassWord"}
                 />

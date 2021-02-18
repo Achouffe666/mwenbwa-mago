@@ -8,7 +8,7 @@ function DisplayMenu() {
     function openMenu() {
         if (open === false) {
             setOpen(true);
-            document.querySelector(".menu").style.display = "block";
+            document.querySelector(".menu").style.display = "flex";
         } else if (open === true) {
             setOpen(false);
             document.querySelector(".menu").style.display = "none";
