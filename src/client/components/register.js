@@ -2,11 +2,11 @@ import * as React from "react";
 import Image from "../assets/images/user.svg";
 
 const Register_field = () => (
-    <div className={"main"}>
-        <div className={"picture"}>
+    <div className={"register_field_main"}>
+        <div className={"register_field_picture"}>
             <img src={Image} />
         </div>
-        <form action={"/"} method={"POST"} className={"register"}>
+        <form action={"/"} method={"POST"} className={"register_field_form"}>
             <label htmlFor={"firstname"}>{"Firstname:"}</label>
             <input
                 type={"text"}
@@ -50,8 +50,12 @@ const Register_field = () => (
                 placeholder={"Birthday"}
                 required
             />
-            <div className={"button"}>
-                <input type={"submit"} className={"submit"} value={"submit"} />
+            <div className={"register_field_button"}>
+                <input
+                    type={"submit"}
+                    className={"register_field_submit"}
+                    value={"submit"}
+                />
             </div>
         </form>
     </div>

@@ -7,14 +7,14 @@ body {
   background-color: #333;
 }
 
-.main {
+.register_field_main {
   height: 100vh;
   background-color: aquamarine;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .picture{
+  .register_field_picture{
     width: 100px;
     height: 100px;
     border: solid 1px black;
@@ -44,7 +44,7 @@ input {
   margin-bottom: 30px;
   padding-left: 10px;
 }
-.button{
+.register_field_button{
   display: flex;
   justify-content: center;
     input{
