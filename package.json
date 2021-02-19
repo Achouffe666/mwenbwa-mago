@@ -63,6 +63,7 @@
     "mongoose": "^5.11.15",
     "react-leaflet": "^3.1.0",
     "react-leaflet-markercluster": "^3.0.0-rc1",
+    "react-router-dom": "^5.2.0",
     "style-loader": "^2.0.0",
     "webpack": "^4.46.0"
   },

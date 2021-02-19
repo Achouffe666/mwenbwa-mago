@@ -8,17 +8,22 @@
 
 import * as React from "react";
 import ReactDOM from "react-dom";
-// import "./assets/style.css";
 
-// import HomeBackGround from "./components/home/homebackground";
-// //import MyMap from "./components/map/map";
-
-// ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
-// //ReactDOM.render(<MyMap />, document.querySelector("#main"));
-
-// =====================================
 import "./assets/leaderboard.css";
 
 import LeaderBoard from "./components/leaderboard/leaderboard";
 
-ReactDOM.render(<LeaderBoard />, document.querySelector("#bodyBackground"));
+import "./assets/style.css";
+import {BrowserRouter} from "react-router-dom";
+import DisplayMenu from "../client/components/layout/header";
+//import HomeBackGround from "./components/home/homebackground";
+
+ReactDOM.render(
+    <BrowserRouter>
+        <DisplayMenu />
+        <LeaderBoard />
+    </BrowserRouter>,
+    document.querySelector("#bodyBackground"),
+);
+
+
