@@ -8,6 +8,11 @@
 
 import * as React from "react";
 import ReactDOM from "react-dom";
+
+import "./assets/leaderboard.css";
+
+import LeaderBoard from "./components/leaderboard/leaderboard";
+
 import "./assets/style.css";
 import {BrowserRouter} from "react-router-dom";
 import DisplayMenu from "../client/components/layout/header";
@@ -16,8 +21,9 @@ import DisplayMenu from "../client/components/layout/header";
 ReactDOM.render(
     <BrowserRouter>
         <DisplayMenu />
+        <LeaderBoard />
     </BrowserRouter>,
     document.querySelector("#bodyBackground"),
 );
 
-//ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
+
