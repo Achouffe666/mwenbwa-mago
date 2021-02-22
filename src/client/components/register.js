@@ -6,13 +6,7 @@ export default class Register_field extends Component {
     constructor(props) {
         super(props);
 
-        this.onChangeUserName = this.onChangeUserName.bind(this);
-        this.onChangeFirstName = this.onChangeFirstName.bind(this);
-        this.onChangeLastName = this.onChangeLastName.bind(this);
-        this.onChangePassword = this.onChangePassword.bind(this);
-        this.onChangeEmail = this.onChangeEmail.bind(this);
-        //this.onChangeBirthday= this.onChangeBirthday.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
 
         this.state = {
             username: "",
@@ -117,9 +111,7 @@ export default class Register_field extends Component {
                         name={"email"}
                         placeholder={"Email"}
                         value={this.state.email}
-                        onChange={e =>
-                            this.setState({lastname: e.target.value})
-                        }
+                        onChange={e => this.setState({email: e.target.value})}
                         required
                     />
 
