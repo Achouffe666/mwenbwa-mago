@@ -285,6 +285,10 @@ footer {
   padding-left: 10px;
   outline-style: none;
   cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.register_field_form input:hover {
+  border: 3px solid #949494;
 }
 .register_field_form .register_field_button {
   display: flex;

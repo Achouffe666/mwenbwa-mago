@@ -334,8 +334,14 @@ list-style-type: none;
     margin-bottom: 35px;
     padding-left: 10px;
     outline-style: none;
-    cursor: pointer;
+    cursor: pointer; 
+    transition: all 0.5s ease-out;
   }
+
+  input:hover {
+    border: 3px solid rgb(148, 148, 148);
+  }
+
   .register_field_button{
     display: flex;
     justify-content: center;
