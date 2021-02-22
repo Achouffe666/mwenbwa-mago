@@ -9,15 +9,14 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
 import "./assets/style.css";
-import {BrowserRouter} from "react-router-dom";
-import DisplayMenu from "../client/components/layout/header";
+// import {BrowserRouter} from "react-router-dom";
+// import DisplayMenu from "../client/components/layout/header";
 //import HomeBackGround from "./components/home/homebackground";
 
-ReactDOM.render(
-    <BrowserRouter>
-        <DisplayMenu />
-    </BrowserRouter>,
-    document.querySelector("#bodyBackground"),
-);
+import HomeBackGround from "./components/home/homebackground";
+// import Register from "./components/register";
+//import MyMap from "./components/map/map";
 
-//ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
+ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
+// ReactDOM.render(<Register />, document.querySelector("#app"));
+//ReactDOM.render(<MyMap />, document.querySelector("#main"));
