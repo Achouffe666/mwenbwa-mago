@@ -1,9 +1,15 @@
 import React, {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome, faSearch, faBars} from "@fortawesome/free-solid-svg-icons";
-import Menu from "../layout/menu";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import DisplayMenu from "./menu";
+import MyMap from "../map/map";
+import Lead from "../leadboard/leadboard";
+import Game from "../gamelog/gamelog";
+import HomeBackGround from "../home/homebackground";
+import Register_field from "../register";
 
-function DisplayMenu() {
+function DisplayHeader() {
     const [open, setOpen] = useState(false);
     function openMenu() {
         if (open === false) {
@@ -14,40 +20,52 @@ function DisplayMenu() {
             document.querySelector(".menu").style.display = "none";
         }
     }
-
     return (
-        <div className={"navbar"}>
-            <div className={"navbar__bloc--title"}>
-                <div>{"Green Grabber"}</div>
-            </div>
-            <div className={"navbar__bloc--home"}>
-                <div>
-                    <FontAwesomeIcon
-                        className={"navbar__bloc__icon"}
-                        icon={faHome}
-                        alt={"home_icon"}
-                    />
-                </div>
-                <div>
-                    <FontAwesomeIcon
-                        className={"navbar__bloc__icon"}
-                        icon={faSearch}
-                        alt={"home_icon"}
-                    />
-                </div>
-                <div onClick={openMenu}>
-                    <FontAwesomeIcon
-                        className={"navbar__bloc__icon"}
-                        icon={faBars}
-                        alt={"home_icon"}
-                    />
+        <Router>
+            <div className={"navbar"}>
+                <div className={"navbar__bloc--title"}>{"Green Grabber"}</div>
+                <div className={"navbar__bloc--home"}>
+                    <div>
+                        <Link
+                            to={"/"}
+                            className={
+                                "menu__link__letter menu__link__letter--a icon__home"
+                            }>
+                            <FontAwesomeIcon
+                                className={"navbar__bloc__icon "}
+                                icon={faHome}
+                                alt={"home_icon"}
+                            />
+                        </Link>
+                    </div>
+                    <div>
+                        <FontAwesomeIcon
+                            className={"navbar__bloc__icon"}
+                            icon={faSearch}
+                            alt={"home_icon"}
+                        />
+                    </div>
+                    <div onClick={openMenu}>
+                        <FontAwesomeIcon
+                            className={"navbar__bloc__icon"}
+                            icon={faBars}
+                            alt={"home_icon"}
+                        />
+                    </div>
                 </div>
             </div>
             <div>
-                <Menu />
+                <DisplayMenu />
             </div>
-        </div>
+            <Switch>
+                <Route exact path={"/"} component={HomeBackGround} />
+                <Route path={"/play"} component={MyMap} />
+                <Route path={"/leaderboard"} component={Lead} />
+                <Route path={"/gamelog"} component={Game} />
+                <Route path={"/register"} component={Register_field} />
+            </Switch>
+        </Router>
     );
 }
 
-export default DisplayMenu;
+export default DisplayHeader;
