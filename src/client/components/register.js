@@ -43,13 +43,7 @@ const Register_field = () => (
             />
 
             <label htmlFor={"birthday"}>{"Birthday:"}</label>
-            <input
-                type={"date"}
-                id={"birthday"}
-                name={"birthday"}
-                placeholder={"Birthday"}
-                required
-            />
+            <input type={"date"} id={"birthday"} name={"birthday"} required />
             <div className={"register_field_button"}>
                 <input
                     type={"submit"}
