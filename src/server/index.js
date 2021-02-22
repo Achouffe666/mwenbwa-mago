@@ -33,6 +33,9 @@ app.get("/hello", (req, res) => {
     //console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
     res.send("Hello, World!");
 });
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve("./bin/client/index.html"));
+});
 app.listen(APP_PORT, () =>
     console.log(`🚀 Server is listening on port ${APP_PORT}.`),
 );
