@@ -7,9 +7,9 @@ function DisplayMenu() {
         <div className={"menu"}>
             <div className={"menu__filter"}>
                 <img className={"menu__myPhoto"} src={myPhoto} alt={"photo"} />
-                <p className={"menu__user"}>{"Maud Leleux"}</p>
-                <div>
-                    <button type={"submit"} className={"menu__profil__bloc"}>
+                <p className={"menu__user"}>{"Maud Idju"}</p>
+                <div className={"menu__profil__bloc"}>
+                    <button type={"submit"} className={"menu__profil"}>
                         <Link
                             to={"/register"}
                             className={"picture__home__button"}>

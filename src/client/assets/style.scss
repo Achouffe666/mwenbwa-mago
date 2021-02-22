@@ -141,10 +141,11 @@ footer
  {
   font-size: 1.5rem;
   color: grey;
-  margin: auto;
+  // margin: auto;
   width: 11rem;
   height: 2rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
   
  }
  &__button
@@ -153,18 +154,21 @@ footer
    border-radius: 1rem;
    background-color: $primary-color;
    background: $gradientYellow;
-   height: 2rem;
+   height: 2.5rem;
    width: 10rem;
    margin: auto;
    font-size: 1.5rem;
    color: white;
+   outline: none;
+   text-decoration: none;  
  }
  &__register
 {
   text-decoration: underline;
-  color: #b28f1e;
-  font-size: 1.5rem;
-  font-weight: bold;
+  // color: #b28f1e;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  // font-weight: bold;
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0);
   padding-top: 1rem;
   margin: auto;
@@ -249,9 +253,9 @@ footer
     font-size: 1.5rem;
     // border: 1px solid $primary-color;
     border: none;
-    height: 2rem;
+    height: 2.5rem;
     width: 10rem;
-    text-align:center;
+    text-align: center;
     position: center;
     margin-top: 1rem;
     margin-right: auto;
@@ -287,26 +291,14 @@ footer
     align-items: center;
     font-size: 1.3rem;
     text-align: center;
+    color: rgba(0, 0, 0, 0.8);
     margin-bottom: 1rem;
     height: 2rem;
     width: 100%;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(3px);
-      
-    a {
-      outline: none;
-      text-decoration: none;
-      color: hotpink;
-    }
-    a:hover {
-      color:red;    
-      outline: none;
-      text-decoration: none;
-    }
-    a:focus {
-      border-bottom: 1px solid;
-      color: green;
-    }
+    outline: none;
+    text-decoration: none;
   }
 }
 
