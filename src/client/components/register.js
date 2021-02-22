@@ -7,6 +7,15 @@ const Register_field = () => (
             <img src={Image} />
         </div>
         <form action={"/"} method={"POST"} className={"register_field_form"}>
+            <label htmlFor={"username"}>{"Username:"}</label>
+            <input
+                type={"text"}
+                id={"username"}
+                name={"username"}
+                placeholder={"Username"}
+                required
+            />
+
             <label htmlFor={"firstname"}>{"Firstname:"}</label>
             <input
                 type={"text"}

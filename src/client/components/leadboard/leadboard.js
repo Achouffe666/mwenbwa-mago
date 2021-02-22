@@ -1,7 +1,7 @@
 import React from "react";
 
 const leaf_icon = "../../assets/images/leaf.png";
-const tree_icon = "../../assets/images/plante.png";
+const tree_icon = "../../assets/images/arbre.png";
 
 const Lead = () => (
     <div className={"leaderBoard-main"}>
