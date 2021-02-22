@@ -26,11 +26,7 @@ function DisplayHeader() {
                 <div className={"navbar__bloc--title"}>{"Green Grabber"}</div>
                 <div className={"navbar__bloc--home"}>
                     <div>
-                        <Link
-                            to={"/"}
-                            className={
-                                "menu__link__letter menu__link__letter--a icon__home"
-                            }>
+                        <Link to={"/"}>
                             <FontAwesomeIcon
                                 className={"navbar__bloc__icon "}
                                 icon={faHome}

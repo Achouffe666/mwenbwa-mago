@@ -14,7 +14,7 @@ import FooterYellow from "../client/components/layout/footer";
 //import HomeBackGround from "./components/home/homebackground";
 
 ReactDOM.render(
-    <div>
+    <div id={"body"}>
         <DisplayHeader />
         <FooterYellow />
     </div>,

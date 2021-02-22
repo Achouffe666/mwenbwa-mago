@@ -27,7 +27,7 @@ body {
   background-color: #FFCC29;
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   width: 100%;
   height: 20%;
   display: flex;
@@ -69,14 +69,17 @@ footer {
 }
 
 .picture__home {
-  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
   position: relative;
-  z-index: 0;
+  top: 20%;
 }
 .picture__home__bloc {
   display: flex;
   flex-direction: column;
-  padding-top: 20rem;
 }
 .picture__home__input {
   font-size: 1.5rem;
@@ -88,17 +91,6 @@ footer {
   height: 2rem;
   padding-left: 2rem;
   margin-bottom: 2rem;
-}
-.picture__home__input a {
-  outline: none;
-  text-decoration: none;
-}
-.picture__home__input a:hover {
-  outline: none;
-  text-decoration: none;
-}
-.picture__home__input a:focus {
-  border-bottom: 1px solid;
 }
 .picture__home__password {
   width: 15rem;
@@ -147,13 +139,13 @@ footer {
 }
 
 .menu {
-  height: 100%;
+  height: 80%;
   width: 25%;
   min-width: 15rem;
   position: absolute;
   padding-top: 5rem;
   backdrop-filter: blur(10px);
-  top: 0;
+  top: 20%;
   right: 0;
   display: none;
   flex-direction: column;
@@ -236,6 +228,7 @@ footer {
 }
 .menu ul {
   list-style-type: none;
+  margin-left: -3rem;
 }
 
 .leaflet-container {

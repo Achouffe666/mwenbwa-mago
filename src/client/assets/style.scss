@@ -31,7 +31,7 @@ $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1
   background-color: $primary-color;
   background: $gradientYellow;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   width: 100%;
   // height: 7rem;
   height: 20%;
@@ -91,15 +91,21 @@ footer
 .picture__home
 {
  
- height: 45rem;
- position: relative;
- z-index:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ //  height: 45rem;
+  height: 100%;
+  position: relative;
+  top: 20%;
+
  &__bloc
  {
    
    display: flex;
    flex-direction: column;
-   padding-top: 20rem;
+  //  padding-top: 20rem;
  }
 
  &__input
@@ -114,17 +120,6 @@ footer
    padding-left: 2rem;
    margin-bottom: 2rem;
 
-   a {
-    outline: none;
-    text-decoration: none;
-  }
-  a:hover {
-    outline: none;
-    text-decoration: none;
-  }
-  a:focus {
-    border-bottom: 1px solid;
-  }
  }
  &__password
  {
@@ -187,13 +182,13 @@ footer
 //________________________menu___________________
 .menu{
   
-  height: 100%;
+  height: 80%;
   width: 25%;
   min-width: 15rem;
   position: absolute;
   padding-top: 5rem;
   backdrop-filter: blur(10px);
-  top: 0;
+  top: 20%;
   right:0;
   display: none;
   // z-index: 30;
@@ -304,7 +299,7 @@ footer
 
 ul{
 list-style-type: none;
-  
+margin-left: -3rem;
 };
 }
 .leaflet-container { 
