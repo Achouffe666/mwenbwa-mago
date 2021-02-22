@@ -2,7 +2,7 @@ import React from "react";
 
 const Lead = () => (
     <div>
-        <p>{"Leaderboard"}</p>
+        <p>{"lijkih"}</p>
     </div>
 );
 

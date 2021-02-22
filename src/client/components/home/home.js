@@ -1,7 +1,6 @@
 import * as React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEye} from "@fortawesome/free-solid-svg-icons";
-import Menu from "../layout/menu";
 
 const Picture = () => (
     <div className={"picture__home"}>
@@ -30,9 +29,6 @@ const Picture = () => (
             />
             <div className={"picture__home__register"}>{"Register"}</div>
         </form>
-        <div>
-            <Menu />
-        </div>
     </div>
 );
 

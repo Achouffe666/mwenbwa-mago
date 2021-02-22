@@ -1,8 +1,7 @@
 * {
   margin: 0;
   border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #body {
@@ -14,22 +13,14 @@
 
 .navbar {
   background-color: #FFCC29;
-  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
   font-size: 2rem;
   width: 100%;
   height: 7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .navbar__bloc--title {
   padding-left: 5rem;
@@ -44,24 +35,14 @@
 }
 .navbar__bloc--item {
   display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   padding-right: 1rem;
 }
 .navbar__bloc--home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   width: 50%;
   padding-right: 5rem;
   padding-top: 2rem;
@@ -69,7 +50,6 @@
 
 footer {
   background-color: #FFCC29;
-  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   height: 5rem;
   width: 100%;
@@ -81,13 +61,8 @@ footer {
   z-index: 0;
 }
 .picture__home__bloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-top: 20rem;
 }
 .picture__home__input {
@@ -105,13 +80,8 @@ footer {
   width: 15rem;
   height: 2rem;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   background-color: white;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
@@ -128,7 +98,6 @@ footer {
   border: none;
   border-radius: 1rem;
   background-color: #FFCC29;
-  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   height: 2rem;
   width: 10rem;
@@ -141,8 +110,7 @@ footer {
   color: #b28f1e;
   font-size: 1.5rem;
   font-weight: bold;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
-          box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
   padding-top: 1rem;
   margin: auto;
 }
@@ -159,8 +127,7 @@ footer {
   width: 15rem;
   position: absolute;
   margin-top: 7rem;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   top: 0;
   right: 0;
   display: none;
@@ -171,8 +138,7 @@ footer {
   opacity: 50%;
   height: 40rem;
   width: 100%;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   top: 0;
   right: 0;
 }
@@ -191,7 +157,6 @@ footer {
   z-index: 30;
   border-radius: 1rem;
   background-color: #FFCC29;
-  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
   font-size: 1.5rem;
@@ -272,4 +237,3 @@ footer {
 .custom-marker-cluster-large div {
   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
 }
-/*# sourceMappingURL=style.css.map */
