@@ -262,7 +262,7 @@ footer {
 .register_field_main .register_field_picture img {
   border-radius: 50%;
   background-color: #d1d1d1;
-  border: 10px white solid;
+  margin: 5px;
 }
 
 .register_field_form {
