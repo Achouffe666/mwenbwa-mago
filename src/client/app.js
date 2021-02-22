@@ -21,6 +21,4 @@ ReactDOM.render(
     document.querySelector("#bodyBackground"),
 );
 
-// ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
-// ReactDOM.render(<Register />, document.querySelector("#app"));
-//ReactDOM.render(<MyMap />, document.querySelector("#main"));
+//ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
