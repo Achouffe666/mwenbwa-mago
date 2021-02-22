@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
+
 
 #body {
   background-image: url("./images/groot_original.jpg");
@@ -245,6 +247,7 @@ footer {
   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
 }
 
+
 .register_field_main {
   height: 100vh;
   display: flex;
@@ -352,5 +355,6 @@ tr {
   border-bottom: 1px solid #333;
   color: #008869;
 }
+
 
 /*# sourceMappingURL=style.css.map */
