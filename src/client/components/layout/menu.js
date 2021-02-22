@@ -7,18 +7,17 @@ function DisplayMenu() {
         <div className={"menu"}>
             <div className={"menu__filter"}>
                 <img className={"menu__myPhoto"} src={myPhoto} alt={"photo"} />
-                <div>
+                <p className={"menu__user"}>{"Maud Idju"}</p>
+                <div className={"menu__profil__bloc"}>
                     <button type={"submit"} className={"menu__profil"}>
                         <Link
                             to={"/register"}
-                            className={
-                                "menu__link__letter menu__link__letter--b"
-                            }>
-                            <div>{"S'inscrire"}</div>
+                            className={"picture__home__button"}>
+                            <div>{"Profil"}</div>
                         </Link>
                     </button>
                 </div>
-                <p className={"menu__user"}>{"Maud Leleux"}</p>
+
                 <ul className={"menu__link__letters"}>
                     <li>
                         <Link

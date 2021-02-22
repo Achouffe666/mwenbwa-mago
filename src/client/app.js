@@ -8,13 +8,13 @@
 
 import * as React from "react";
 import ReactDOM from "react-dom";
-import "./assets/style.css";
+import "./assets/style.scss";
 import DisplayHeader from "../client/components/layout/header";
 import FooterYellow from "../client/components/layout/footer";
 //import HomeBackGround from "./components/home/homebackground";
 
 ReactDOM.render(
-    <div>
+    <div id={"body"}>
         <DisplayHeader />
         <FooterYellow />
     </div>,

@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD:src/client/assets/style.css
 
+=======
+>>>>>>> oli2:src/client/assets/dist/style.css
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -12,35 +15,48 @@ body {
   height: 100vh;
 }
 
+<<<<<<< HEAD:src/client/assets/style.css
+=======
+#bodyBackground {
+  height: 100%;
+}
+>>>>>>> oli2:src/client/assets/dist/style.css
 
 #body {
   background-image: url("./images/groot_original.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
+<<<<<<< HEAD:src/client/assets/style.css
+=======
+  height: 100%;
+>>>>>>> oli2:src/client/assets/dist/style.css
 }
 
 .navbar {
   background-color: #FFCC29;
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   width: 100%;
-  height: 7rem;
+  height: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+<<<<<<< HEAD:src/client/assets/style.css
+=======
+  position: absolute;
+  top: 0;
+>>>>>>> oli2:src/client/assets/dist/style.css
 }
 .navbar__bloc--title {
   padding-left: 5rem;
-  padding-top: 2rem;
+  display: flex;
+  align-items: center;
 }
 .navbar__bloc__icon {
   padding-right: 1rem;
   color: white;
-}
-.navbar__bloc__icon .icon__home {
-  width: 10rem;
 }
 .navbar__bloc--item {
   display: none;
@@ -52,9 +68,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+<<<<<<< HEAD:src/client/assets/style.css
   width: 50%;
   padding-right: 5rem;
   padding-top: 2rem;
+=======
+  align-items: center;
+  width: 25%;
+  z-index: 555;
+  position: relative;
+>>>>>>> oli2:src/client/assets/dist/style.css
 }
 
 footer {
@@ -65,14 +88,21 @@ footer {
 }
 
 .picture__home {
-  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
   position: relative;
-  z-index: 0;
+  top: 20%;
 }
 .picture__home__bloc {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD:src/client/assets/style.css
   padding-top: 20rem;
+=======
+>>>>>>> oli2:src/client/assets/dist/style.css
 }
 .picture__home__input {
   font-size: 1.5rem;
@@ -98,27 +128,34 @@ footer {
 .picture__home__input__password {
   font-size: 1.5rem;
   color: grey;
-  margin: auto;
   width: 11rem;
   height: 2rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
 }
 .picture__home__button {
   border: none;
   border-radius: 1rem;
   background-color: #FFCC29;
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
-  height: 2rem;
+  height: 2.5rem;
   width: 10rem;
   margin: auto;
   font-size: 1.5rem;
   color: white;
+  outline: none;
+  text-decoration: none;
 }
 .picture__home__register {
   text-decoration: underline;
+<<<<<<< HEAD:src/client/assets/style.css
   color: #b28f1e;
   font-size: 1.5rem;
   font-weight: bold;
+=======
+  color: whitesmoke;
+  font-size: 1.2rem;
+>>>>>>> oli2:src/client/assets/dist/style.css
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
   padding-top: 1rem;
   margin: auto;
@@ -131,87 +168,110 @@ footer {
 }
 
 .menu {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 40rem;
-  width: 15rem;
+  height: 80%;
+  width: 25%;
+  min-width: 15rem;
   position: absolute;
+<<<<<<< HEAD:src/client/assets/style.css
   margin-top: 7rem;
   backdrop-filter: blur(20px);
   top: 0;
+=======
+  padding-top: 5rem;
+  backdrop-filter: blur(10px);
+  top: 20%;
+>>>>>>> oli2:src/client/assets/dist/style.css
   right: 0;
   display: none;
-  z-index: 30;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 .menu__filter {
-  background-color: white;
-  opacity: 50%;
-  height: 40rem;
+  background: rgba(255, 255, 255, 0.4);
+  height: 100%;
   width: 100%;
+<<<<<<< HEAD:src/client/assets/style.css
   backdrop-filter: blur(20px);
+=======
+  position: absolute;
+  z-index: 550;
+>>>>>>> oli2:src/client/assets/dist/style.css
   top: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
 .menu__myPhoto {
-  width: 10rem;
-  margin-top: 2rem;
-  padding-left: 5rem;
-  border-radius: 10rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 0.5rem;
 }
 .menu__user {
-  padding-left: 3.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
 }
 .menu__profil {
-  position: absolute;
-  z-index: 30;
   border-radius: 1rem;
   background-color: #FFCC29;
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
   font-size: 1.5rem;
-  border: 1px solid #FFCC29;
-  height: 2rem;
+  border: none;
+  height: 2.5rem;
   width: 10rem;
   text-align: center;
   position: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 .menu__profil__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 2rem;
   width: 10rem;
-  margin: auto;
+  margin-bottom: 1rem;
   margin-top: 1rem;
 }
-.menu__link__bloc {
-  margin-top: 8rem;
-}
 .menu__link__letters {
-  margin-top: 7rem;
+  margin-top: 0.8rem;
+  width: 100%;
 }
 .menu__link__letter {
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
   text-align: center;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 1rem;
+  height: 2rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  outline: none;
   text-decoration: none;
-}
-.menu__link__letter--a {
-  padding-bottom: 3rem;
-}
-.menu__link__letter--b {
-  padding-bottom: 2.7rem;
-}
-.menu__link__letter--c {
-  padding-bottom: 3rem;
 }
 .menu ul {
   list-style-type: none;
+  margin-left: -3rem;
 }
 
 .leaflet-container {
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
+  position: relative;
 }
 
 /* MARKER CLUSTERS */
@@ -245,6 +305,7 @@ footer {
 
 .custom-marker-cluster-large div {
   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+<<<<<<< HEAD:src/client/assets/style.css
 }
 
 
@@ -358,3 +419,6 @@ tr {
 
 
 /*# sourceMappingURL=style.css.map */
+=======
+}
+>>>>>>> oli2:src/client/assets/dist/style.css

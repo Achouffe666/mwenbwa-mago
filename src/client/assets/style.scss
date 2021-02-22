@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#bodyBackground{
+  height: 100%;
+}
 $body-color: white;
 $primary-color: #FFCC29;
 $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
@@ -22,33 +31,39 @@ body {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  height: 100%;
 }
 
-//__________________header
+//__________________header______________
+
 .navbar{
   background-color: $primary-color;
   background: $gradientYellow;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   width: 100%;
-  height: 7rem;
+  // height: 7rem;
+  height: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  position: absolute;
+  top: 0;
+
   &__bloc--title
   {
     padding-left: 5rem;
-    padding-top: 2rem;
+    display: flex;
+    align-items: center;
   }
   &__bloc__icon
   {
     padding-right: 1rem;
     color: white;
-    .icon__home
-    {
-      width: 10rem;
-    }
+    // .icon__home
+    // {
+      // width: 10rem;
+    // }
   }
   &__bloc--item
       {
@@ -62,9 +77,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 50%;
-    padding-right: 5rem;
-    padding-top: 2rem;
+    align-items: center;
+    width: 25%;
+    // padding-right: 5rem;
+    z-index: 555;
+    position: relative;
   }
   }
 //________________________________footer_____________________________
@@ -83,15 +100,21 @@ footer
 .picture__home
 {
  
- height: 45rem;
- position: relative;
- z-index:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ //  height: 45rem;
+  height: 100%;
+  position: relative;
+  top: 20%;
+
  &__bloc
  {
    
    display: flex;
    flex-direction: column;
-   padding-top: 20rem;
+  //  padding-top: 20rem;
  }
 
  &__input
@@ -105,6 +128,7 @@ footer
    height: 2rem;
    padding-left: 2rem;
    margin-bottom: 2rem;
+
  }
  &__password
  {
@@ -121,10 +145,11 @@ footer
  {
   font-size: 1.5rem;
   color: grey;
-  margin: auto;
+  // margin: auto;
   width: 11rem;
   height: 2rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  border-radius: 0.5rem;
   
  }
  &__button
@@ -133,18 +158,21 @@ footer
    border-radius: 1rem;
    background-color: $primary-color;
    background: $gradientYellow;
-   height: 2rem;
+   height: 2.5rem;
    width: 10rem;
    margin: auto;
    font-size: 1.5rem;
    color: white;
+   outline: none;
+   text-decoration: none;  
  }
  &__register
 {
   text-decoration: underline;
-  color: #b28f1e;
-  font-size: 1.5rem;
-  font-weight: bold;
+  // color: #b28f1e;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  // font-weight: bold;
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0);
   padding-top: 1rem;
   margin: auto;
@@ -163,100 +191,131 @@ footer
 //________________________menu___________________
 .menu{
   
-  font-family:Arial, Helvetica, sans-serif;
-  height: 40rem;
-  width: 15rem;
+  height: 80%;
+  width: 25%;
+  min-width: 15rem;
   position: absolute;
-  margin-top: 7rem;
-  backdrop-filter: blur(20px);
-  top: 0;
+  padding-top: 5rem;
+  backdrop-filter: blur(10px);
+  top: 20%;
   right:0;
   display: none;
-  z-index: 30;
+  // z-index: 30;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.8);
   &__filter
   {
-    background-color: white;
-    opacity: 50%;
-    height: 40rem;
+    background: rgba(255, 255, 255, 0.4);
+    // opacity: 50%;
+    height: 100%;
     width: 100%;
-    backdrop-filter: blur(20px);
+    // backdrop-filter: blur(20px);
+    position: absolute;
+    z-index: 550;
     top: 0;
     right:0;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
+  &__photo
+  {
+    // margin-top: 2rem;
+    // padding-left: 5rem;
+    // display: flex;
+    // justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
   }
 &__myPhoto
   {
-    width: 10rem;
-    margin-top: 2rem;
-    padding-left: 5rem;
-    border-radius: 10rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: .5rem;
   }
 &__user
 {
-  padding-left: 3.5rem;
-  font-size: 1.5rem;
+  // padding-left: 3.5rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
 }
 &__profil
   {
-    position: absolute;
-    z-index: 30;
+    // position: absolute;
+    // z-index: 30;
     border-radius: 1rem;
     background-color: $primary-color;
     background: $gradientYellow;
     color: white;
     font-size: 1.5rem;
-    border: 1px solid $primary-color;
-    height: 2rem;
+    // border: 1px solid $primary-color;
+    border: none;
+    height: 2.5rem;
     width: 10rem;
-    text-align:center;
+    text-align: center;
     position: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
     &__bloc
     {
-      position:relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
       height: 2rem;
       width: 10rem;
-      margin:auto;
+      margin-bottom: 1rem;
       margin-top: 1rem;
     }
   }
-&__link__bloc
-{
-  margin-top: 8rem;
+// &__link__bloc
+// {
+//   margin-top: 8rem;
   
-}
+// }
 &__link
 {
   &__letters
   {
-    margin-top: 7rem;
+    margin-top: .8rem;
+    width: 100%;
   }
   &__letter
   {
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
     text-align: center;
-    color: black;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(3px);
+    outline: none;
     text-decoration: none;
-    &--a{
-      padding-bottom: 3rem;
-    }
-    &--b{
-      padding-bottom: 2.7rem;
-    }
-    &--c{
-      padding-bottom: 3rem;
-    }
   }
 }
 
 ul{
 list-style-type: none;
-  
+margin-left: -3rem;
 };
 }
 .leaflet-container { 
-  width: 100%; 
-  height: 100vh;
-  z-index: 1;
+  // width: 100%; 
+  // height: 100vh;
+  // z-index: 1;
+  position: relative;
 }
 /* MARKER CLUSTERS */
  .custom-marker-cluster-single {
