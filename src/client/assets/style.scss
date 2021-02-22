@@ -8,6 +8,15 @@
 $body-color: white;
 $primary-color: #FFCC29;
 $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
 #body{
   background-image: url("./images/groot_original.jpg");
   background-size: cover;
@@ -277,3 +286,138 @@ list-style-type: none;
  .custom-marker-cluster-large div {
    background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
  }
+
+
+//===========================================================================
+//====================== REGISTER ========================
+
+.register_field_main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .register_field_picture{
+    width: 150px;
+    border: solid 3px rgb(209, 209, 209);
+    display: flex;
+    border-radius: 50%;
+    margin-bottom: 45px;
+
+    img{
+      border-radius: 50%;
+      background-color: rgb(209, 209, 209);
+      margin: 5px;      
+    }
+  }
+}
+
+.register_field_form {
+
+  width: 275px;
+
+  label {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    display: none;
+  }
+
+  input {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border: 3px solid rgb(209, 209, 209);
+    border-radius: 20px;
+    margin-bottom: 35px;
+    padding-left: 10px;
+    outline-style: none;
+    cursor: pointer; 
+    transition: all 0.5s ease-out;
+  }
+
+  input:hover {
+    border: 3px solid rgb(148, 148, 148);
+  }
+
+  .register_field_button{
+    display: flex;
+    justify-content: center;
+
+      input{
+        border-radius: 25px;
+        color: white;
+        width: 75%;
+        background: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
+        text-transform: uppercase;
+        font-size: larger;
+        font-weight: 700;
+        }
+
+      :hover{
+        background: linear-gradient(90deg,  rgba(177,142,29,1)0%, rgba(198,159,32,1) 35%, rgba(255,204,41,1) 100%);
+        cursor:pointer;
+      }
+  // .btn{
+  //   border-radius: 15px;
+  //   font-size: larger;
+  //   text-align: center;
+  //   padding: 10px;
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  //   color: white;
+  //   background-color: #B08D00;
+  //   border: solid black 1px;
+  // }
+  }
+}
+
+//============================================================================
+//================= LeadBoard =============================
+
+.leaderBoard-main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderBoard-box {
+  width: 300px;
+  height: 600px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow:  0px 0px 25px grey;
+}
+
+table {
+  width: 250px;
+  height: 500px;
+  background-color: #f1f1f1;
+  border-collapse: collapse;
+}
+
+.leaderBoard-title {
+  color: #008869;
+  font-size: 24px;
+}
+
+.leaderBoard-subtitle {
+  color: #08bd9c;
+  font-weight: bold;
+}
+
+tr {
+  text-align: center;
+}
+
+.leaderBoard-rows {
+  text-align: center;
+  border-bottom: 1px solid #333;
+  color:#008869;
+}

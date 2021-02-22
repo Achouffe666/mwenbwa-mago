@@ -20,5 +20,4 @@ ReactDOM.render(
     </div>,
     document.querySelector("#bodyBackground"),
 );
-
 //ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
