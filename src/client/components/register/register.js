@@ -1,12 +1,21 @@
 import * as React from "react";
-import Image from "../assets/images/user.svg";
+import Image from "../../assets/images/user.svg";
 
 const Register_field = () => (
-    <div className={"main"}>
-        <div className={"picture"}>
+    <div className={"register_field_main"}>
+        <div className={"register_field_picture"}>
             <img src={Image} />
         </div>
-        <form action={"/"} method={"POST"} className={"register"}>
+        <form action={"/"} method={"POST"} className={"register_field_form"}>
+            <label htmlFor={"username"}>{"Username:"}</label>
+            <input
+                type={"text"}
+                id={"username"}
+                name={"username"}
+                placeholder={"Username"}
+                required
+            />
+
             <label htmlFor={"firstname"}>{"Firstname:"}</label>
             <input
                 type={"text"}
@@ -29,7 +38,6 @@ const Register_field = () => (
             <input
                 type={"password"}
                 id={"password"}
-                name={"password"}
                 placeholder={"Password"}
                 required
             />
@@ -44,15 +52,13 @@ const Register_field = () => (
             />
 
             <label htmlFor={"birthday"}>{"Birthday:"}</label>
-            <input
-                type={"date"}
-                id={"birthday"}
-                name={"birthday"}
-                placeholder={"Birthday"}
-                required
-            />
-            <div className={"button"}>
-                <input type={"submit"} className={"submit"} value={"submit"} />
+            <input type={"date"} id={"birthday"} name={"birthday"} required />
+            <div className={"register_field_button"}>
+                <input
+                    type={"submit"}
+                    className={"register_field_submit"}
+                    value={"submit"}
+                />
             </div>
         </form>
     </div>

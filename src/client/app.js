@@ -6,18 +6,18 @@
  * started at 18/05/2020
  */
 
-import "./assets/style.css";
 import * as React from "react";
 import ReactDOM from "react-dom";
+import "./assets/style.css";
+import DisplayHeader from "../client/components/layout/header";
+import FooterYellow from "../client/components/layout/footer";
+//import HomeBackGround from "./components/home/homebackground";
 
-import Register from "./components/register";
-
-ReactDOM.render(<Register />, document.querySelector("#app"));
-//import HeaderYellow from "./components/header";
-// import Picture from "./components/home";
-// import DisplayMenu from "./components/header";
-//import HomeBackGround from "./components/homebackground";
-import MyMap from "./components/map";
-
+ReactDOM.render(
+    <div>
+        <DisplayHeader />
+        <FooterYellow />
+    </div>,
+    document.querySelector("#bodyBackground"),
+);
 //ReactDOM.render(<HomeBackGround />, document.querySelector("#bodyBackground"));
-ReactDOM.render(<MyMap />, document.querySelector("#main"));

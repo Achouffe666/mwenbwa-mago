@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import {Marker} from "react-leaflet"; // MapContainer, TileLayer
 import L from "leaflet";
-import fleatIcon from "../assets/images/leaf.png";
-import treedata from "../data/treedata.json";
+import fleatIcon from "../../assets/images/leaf.png";
+import treedata from "../../data/treedata.json";
 
 const fleat_Icon = L.icon({
     iconUrl: fleatIcon,
