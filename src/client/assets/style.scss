@@ -90,7 +90,7 @@ footer
 {
   background-color: $primary-color;
   background: $gradientYellow;
-  height: 5rem;
+  height: 10%;
   width: 100%;
   
 }
@@ -165,7 +165,14 @@ footer
    color: white;
    outline: none;
    text-decoration: none;  
+   &__link
+   {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+   }
  }
+ 
  &__register
 {
   text-decoration: underline;

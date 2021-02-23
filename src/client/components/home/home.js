@@ -26,11 +26,13 @@ const Picture = () => (
                     alt={"home_icon"}
                 />
             </div>
-            <input
-                type={"submit"}
-                className={"picture__home__button"}
-                value={"Play Game"}
-            />
+            <Link to={"/play"} className={"picture__home__button__link"}>
+                <input
+                    className={"picture__home__button"}
+                    type={"submit"}
+                    value={"Play Game"}
+                />
+            </Link>
             <Link to={"/register"} className={"picture__home__register"}>
                 <div>{"Register"}</div>
             </Link>
