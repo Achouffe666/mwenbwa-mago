@@ -2,6 +2,8 @@ import * as React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEye} from "@fortawesome/free-solid-svg-icons";
 
+import {Link} from "react-router-dom";
+
 const Picture = () => (
     <div className={"picture__home"}>
         <form action={"/"} method={"POST"} className={"picture__home__bloc"}>
@@ -29,7 +31,9 @@ const Picture = () => (
                 className={"picture__home__button"}
                 value={"Play Game"}
             />
-            <div className={"picture__home__register"}>{"Register"}</div>
+            <Link to={"/register"} className={"picture__home__register"}>
+                <div>{"Register"}</div>
+            </Link>
         </form>
     </div>
 );
