@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Image from "../assets/images/user.svg";
 import axios from "axios";
 
 export default class Register_field extends Component {

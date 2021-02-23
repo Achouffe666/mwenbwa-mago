@@ -1,23 +1,13 @@
 * {
   margin: 0;
   border: 0;
-<<<<<<< HEAD
-  box-sizing: border-box;
-}
-=======
   box-sizing: border-box; }
->>>>>>> remotes/origin/Austin
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  height: 100vh;
-}
-=======
   height: 100vh; }
->>>>>>> remotes/origin/Austin
 
 #body {
   background-image: url("./images/groot_original.jpg");
@@ -213,12 +203,7 @@ footer {
   background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6)); }
 
 .custom-marker-cluster-large div {
-<<<<<<< HEAD
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
-}
-=======
   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6)); }
->>>>>>> remotes/origin/Austin
 
 .register_field_main {
   height: 100vh;
@@ -238,50 +223,6 @@ footer {
       margin: 5px; }
 
 .register_field_form {
-<<<<<<< HEAD
-  width: 275px;
-}
-.register_field_form label {
-  display: block;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  display: none;
-}
-.register_field_form input {
-  height: 50px;
-  width: 100%;
-  font-size: 16px;
-  border: none;
-  border: 3px solid #d1d1d1;
-  border-radius: 20px;
-  margin-bottom: 35px;
-  padding-left: 10px;
-  outline-style: none;
-  cursor: pointer;
-  transition: all 0.5s ease-out;
-}
-.register_field_form input:hover {
-  border: 3px solid #949494;
-}
-.register_field_form .register_field_button {
-  display: flex;
-  justify-content: center;
-}
-.register_field_form .register_field_button input {
-  border-radius: 25px;
-  color: white;
-  width: 75%;
-  background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
-  text-transform: uppercase;
-  font-size: larger;
-  font-weight: 700;
-}
-.register_field_form .register_field_button :hover {
-  transition: all 0.5s ease-out;
-  background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
-  cursor: pointer;
-}
-=======
   width: 275px; }
   .register_field_form label {
     display: block;
@@ -316,7 +257,6 @@ footer {
     .register_field_form .register_field_button :hover {
       background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
       cursor: pointer; }
->>>>>>> remotes/origin/Austin
 
 .leaderBoard-main {
   height: 100vh;
@@ -354,11 +294,6 @@ tr {
 .leaderBoard-rows {
   text-align: center;
   border-bottom: 1px solid #333;
-<<<<<<< HEAD
-  color: #008869;
-}
-=======
   color: #008869; }
->>>>>>> remotes/origin/Austin
 
 /*# sourceMappingURL=style.css.map */
