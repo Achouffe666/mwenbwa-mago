@@ -275,6 +275,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/mapground.jpg");
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -285,6 +290,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
 }
 .register_field_main .register_field_picture {
   width: 150px;
@@ -299,9 +305,11 @@ footer {
   border-radius: 50%;
   background-color: #d1d1d1;
   margin: 5px;
+  z-index: 99;
 }
 
 .register_field_form {
+  z-index: 100;
   width: 275px;
 }
 .register_field_form label {
@@ -321,19 +329,21 @@ footer {
   padding-left: 10px;
   outline-style: none;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+
+  transition: all 0.3s ease-out;
 }
 .register_field_form input:hover {
+  border: 3px solid #949494;
+}
+.register_field_form input:focus {
+  background: #e7e6e6;
   border: 3px solid #949494;
 }
 .register_field_form .register_field_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .register_field_form .register_field_button input {
   border-radius: 25px;
@@ -344,13 +354,18 @@ footer {
   text-transform: uppercase;
   font-size: larger;
   font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
 }
 .register_field_form .register_field_button :hover {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   background: -webkit-gradient(linear, left top, right top, from(#b18e1d), color-stop(35%, #c69f20), to(#ffcc29));
+
   background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
-  cursor: pointer;
 }
 
 .leaderBoard-main {
@@ -358,12 +373,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/mapground.jpg");
 }
 
 .leaderBoard-box {
