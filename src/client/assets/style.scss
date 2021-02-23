@@ -352,24 +352,23 @@ list-style-type: none;
   .register_field_button{
     display: flex;
     justify-content: center;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0);
     
     input{
-        border-radius: 25px;
-        color: white;
-        width: 75%;
-        background: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
-        text-transform: uppercase;
-        font-size: larger;
-        font-weight: 700;
-        cursor:pointer;
-        transition: all 0.5s ease-out;
+      border-radius: 25px;
+      color: white;
+      width: 75%;
+      background: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
+      text-transform: uppercase;
+      font-size: larger;
+      font-weight: 700;
+      cursor:pointer;
+      transition: all 0.5s ease-out;
 
-        &:hover{
-          background: linear-gradient(90deg,  rgba(177,142,29,1)0%, rgba(198,159,32,1) 35%, rgba(255,204,41,1) 100%);
-        }
-
+      &:hover{
+        background: linear-gradient(90deg,  rgba(177,142,29,1)0%, rgba(198,159,32,1) 35%, rgba(255,204,41,1) 100%);
       }
+
+    }
       
   }
 }
