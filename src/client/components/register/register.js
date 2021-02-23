@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
+import Image from "../../assets/images/user.svg";
 //import { CirclePicker } from 'react-color';
 
 export default class Register_field extends Component {
