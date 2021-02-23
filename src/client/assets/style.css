@@ -251,6 +251,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("./images/mapground.jpg");
 }
 .register_field_main .register_field_picture {
   width: 150px;
@@ -263,9 +264,11 @@ footer {
   border-radius: 50%;
   background-color: #d1d1d1;
   margin: 5px;
+  z-index: 99;
 }
 
 .register_field_form {
+  z-index: 100;
   width: 275px;
 }
 .register_field_form label {
@@ -285,14 +288,19 @@ footer {
   padding-left: 10px;
   outline-style: none;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 .register_field_form input:hover {
+  border: 3px solid #949494;
+}
+.register_field_form input:focus {
+  background: #e7e6e6;
   border: 3px solid #949494;
 }
 .register_field_form .register_field_button {
   display: flex;
   justify-content: center;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .register_field_form .register_field_button input {
   border-radius: 25px;
@@ -302,11 +310,11 @@ footer {
   text-transform: uppercase;
   font-size: larger;
   font-weight: 700;
-}
-.register_field_form .register_field_button :hover {
-  transition: all 0.5s ease-out;
-  background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
   cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.register_field_form .register_field_button input:hover {
+  background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
 }
 
 .leaderBoard-main {
@@ -314,6 +322,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("./images/mapground.jpg");
 }
 
 .leaderBoard-box {
