@@ -127,7 +127,7 @@ export default class Register_field extends Component {
                         placeholder={"Birthday"}
                         required
                     />
-                    {/*  <CirclePicker 
+                    {/* <CirclePicker 
                     color={ this.state.userColor }
                     onChangeComplete={ this.handleChangeComplete }
                     /> */}
