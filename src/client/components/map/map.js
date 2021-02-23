@@ -23,7 +23,7 @@ const MyMap = () => {
     //     }
 
     return (
-        <div>
+        <div className={"icon__password"}>
             <MapContainer
                 style={{height: "100vh"}}
                 center={position}

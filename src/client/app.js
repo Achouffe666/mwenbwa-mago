@@ -2,13 +2,14 @@
  *
  * /src/client/app.js - Client entry point
  *
- * coded by leny@BeCode
+ * starter code by leny@BeCode
  * started at 18/05/2020
+ * coded by The MAGO Team [ Maud & Austin & Gaëtan & Olivier ]
  */
 
 import * as React from "react";
 import ReactDOM from "react-dom";
-import "./assets/style.scss";
+import "./assets/style.css";
 import DisplayHeader from "../client/components/layout/header";
 import FooterYellow from "../client/components/layout/footer";
 //import HomeBackGround from "./components/home/homebackground";

@@ -1,5 +1,5 @@
 import * as React from "react";
-import Image from "../assets/images/user.svg";
+import Image from "../../assets/images/user.svg";
 
 const Register_field = () => (
     <div className={"register_field_main"}>

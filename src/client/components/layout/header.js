@@ -7,7 +7,7 @@ import MyMap from "../map/map";
 import Lead from "../leadboard/leadboard";
 import Game from "../gamelog/gamelog";
 import HomeBackGround from "../home/homebackground";
-import Register_field from "../register";
+import Register_field from "../register/register";
 
 function DisplayHeader() {
     const [open, setOpen] = useState(false);
