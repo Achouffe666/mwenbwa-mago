@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
+//import { CirclePicker } from 'react-color';
 
 export default class Register_field extends Component {
     constructor(props) {
@@ -14,9 +15,12 @@ export default class Register_field extends Component {
             password: "",
             email: "",
             birthday: "",
+            userColor: "#fff",
         };
     }
-
+    // handleChangeComplete = (color) => {
+    //     this.setState({ userColor: color.hex });
+    //   };
     handleSubmit(e) {
         e.preventDefault();
 
@@ -124,7 +128,11 @@ export default class Register_field extends Component {
                         placeholder={"Birthday"}
                         required
                     />
-                    <div className={"register_field_button"}>
+                    {/* <CirclePicker 
+                    color={ this.state.userColor }
+                    onChangeComplete={ this.handleChangeComplete }
+                    /> */}
+                    <div className={"button"}>
                         <input
                             type={"submit"}
                             className={"register_field_submit"}
