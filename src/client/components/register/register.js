@@ -1,7 +1,6 @@
 import React, {Component} from "react";
-import Image from "../assets/images/user.svg";
 import axios from "axios";
-//import { CirclePicker } from 'react-color';
+import {CirclePicker} from "react-color";
 
 export default class Register_field extends Component {
     constructor(props) {
@@ -19,9 +18,11 @@ export default class Register_field extends Component {
             userColor: "#fff",
         };
     }
-    // handleChangeComplete = (color) => {
-    //     this.setState({ userColor: color.hex });
-    //   };
+    handleChangeComplete = color => {
+        /* eslint-disable no-invalid-this */
+        this.setState({userColor: color.hex});
+    }; /* eslint-disable no-invalid-this */
+
     handleSubmit(e) {
         e.preventDefault();
 
@@ -31,6 +32,7 @@ export default class Register_field extends Component {
             firstname: this.state.firstname,
             lastname: this.state.lastname,
             password: this.state.password,
+            userColor: this.state.userColor,
         };
 
         axios
@@ -48,16 +50,19 @@ export default class Register_field extends Component {
             firstname: "",
             lastname: "",
             password: "",
+            userColor: "",
         });
     }
 
     render() {
         return (
-            <div className={"main"}>
-                <div className={"picture"}>
+            <div className={"register_field_main"}>
+                <div className={"register_field_picture"}>
                     <img src={Image} />
                 </div>
-                <form onSubmit={this.handleSubmit} className={"register"}>
+                <form
+                    onSubmit={this.handleSubmit}
+                    className={"register_field_form"}>
                     <label htmlFor={"username"}>{"Username:"}</label>
                     <input
                         type={"text"}
@@ -127,14 +132,14 @@ export default class Register_field extends Component {
                         placeholder={"Birthday"}
                         required
                     />
-                    {/* <CirclePicker 
-                    color={ this.state.userColor }
-                    onChangeComplete={ this.handleChangeComplete }
-                    /> */}
+                    <CirclePicker
+                        color={this.state.userColor}
+                        onChangeComplete={this.handleChangeComplete}
+                    />
                     <div className={"button"}>
                         <input
                             type={"submit"}
-                            className={"submit"}
+                            className={"register_field_submit"}
                             value={"submit"}
                         />
                     </div>
