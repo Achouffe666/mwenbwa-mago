@@ -8,7 +8,6 @@ const RegisterSchema = new mongoose.Schema({
     email: {type: String, unique: true},
     birthday: {type: Date},
     treeCount: {type: Number, default: 3},
-    userColor: {type: String, default: "#fff"},
 });
 
 module.exports = mongoose.model("Register", RegisterSchema);
