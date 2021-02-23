@@ -12,7 +12,7 @@ exports.createClient = (req, res) => {
 };
 
 exports.loginClient = (req, res) => {
-    Register.findOne({firstname: req.body.firstname})
+    Register.findOne({username: req.body.username})
         .then(user => {
             if (!user || req.body.password !== user.password) {
                 return res.status(401).json({error: "user not found"});
