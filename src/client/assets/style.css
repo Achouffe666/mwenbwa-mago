@@ -304,6 +304,7 @@ footer {
   font-weight: 700;
 }
 .register_field_form .register_field_button :hover {
+  transition: all 0.5s ease-out;
   background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
   cursor: pointer;
 }
