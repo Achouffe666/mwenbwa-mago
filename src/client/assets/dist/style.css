@@ -15,6 +15,13 @@ body {
   height: 100%;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 #body {
   background-image: url("./images/groot_original.jpg");
   background-size: cover;
@@ -136,6 +143,14 @@ footer {
   font-size: 1.5rem;
   color: grey;
   margin: auto;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+input[type=password]:focus {
+  outline: none;
 }
 
 .menu {
@@ -268,7 +283,6 @@ footer {
   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
 }
 
-
 .register_field_main {
   height: 100vh;
   display: flex;
@@ -370,11 +384,9 @@ table {
 tr {
   text-align: center;
 }
+
 .leaderBoard-rows {
   text-align: center;
   border-bottom: 1px solid #333;
   color: #008869;
 }
-
-
-/*# sourceMappingURL=style.css.map */

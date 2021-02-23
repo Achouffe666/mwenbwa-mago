@@ -188,6 +188,14 @@ footer
     margin: auto;
   }
 }
+//____________________input_______________
+input[type=text]:focus {
+  outline: none;
+}
+input[type=password]:focus {
+  outline: none;
+}
+
 //________________________menu___________________
 .menu{
   
