@@ -23,13 +23,8 @@ const MyMap = () => {
     //     }
 
     return (
-        <div className={"icon__password"}>
-            <MapContainer
-                style={{height: "100vh"}}
-                center={position}
-                zoom={17}
-                minZoom={12}
-                maxZoom={18}>
+        <div className={"map_container"}>
+            <MapContainer center={position} zoom={17} minZoom={12} maxZoom={18}>
                 <TileLayer
                     attribution={
                         "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"

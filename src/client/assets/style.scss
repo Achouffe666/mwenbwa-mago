@@ -18,20 +18,16 @@ $body-color: white;
 $primary-color: #FFCC29;
 $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
 
-body {
-  font-family:Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
 
 
 #body{
   background-image: url("./images/groot_original.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  // overflow: hidden;
   height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 //__________________header______________
@@ -42,7 +38,6 @@ body {
   color: white;
   font-size: 2.5rem;
   width: 100%;
-  // height: 7rem;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -52,18 +47,15 @@ body {
 
   &__bloc--title
   {
-    padding-left: 5rem;
+    margin-left: min(5%, 5rem);
     display: flex;
     align-items: center;
+    width: 50%;
   }
   &__bloc__icon
   {
     padding-right: 1rem;
     color: white;
-    // .icon__home
-    // {
-      // width: 10rem;
-    // }
   }
   &__bloc--item
       {
@@ -79,7 +71,7 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 25%;
-    // padding-right: 5rem;
+    padding-right: min(1rem);
     z-index: 555;
     position: relative;
   }
@@ -92,31 +84,25 @@ footer
   background: $gradientYellow;
   height: 10%;
   width: 100%;
-  
+  position: absolute;
+  bottom: 0;  
 }
 
 //_____________________________________home____________________________
 
 .picture__home
 {
- 
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
- //  height: 45rem;
-  height: 100%;
   position: relative;
-  top: 20%;
-
+  top: 40%;
  &__bloc
  {
-   
    display: flex;
    flex-direction: column;
-  //  padding-top: 20rem;
  }
-
  &__input
  {
    font-size: 1.5rem;
@@ -128,7 +114,6 @@ footer
    height: 2rem;
    padding-left: 2rem;
    margin-bottom: 2rem;
-
  }
  &__password
  {
@@ -145,12 +130,10 @@ footer
  {
   font-size: 1.5rem;
   color: grey;
-  // margin: auto;
   width: 11rem;
   height: 2rem;
   padding-left: 2rem;
   border-radius: 0.5rem;
-  
  }
  &__button
  {
@@ -171,21 +154,17 @@ footer
     flex-direction: row;
     text-decoration: none;
    }
- }
- 
+ } 
  &__register
 {
   text-decoration: underline;
-  // color: #b28f1e;
   color: whitesmoke;
   font-size: 1.2rem;
-  // font-weight: bold;
   box-shadow: 5px 5px 15px 5px rgba(0,0,0,0);
   padding-top: 1rem;
   margin: auto;
 }
 }
-
 .icon
 {
   &__password
@@ -202,7 +181,6 @@ input[type=text]:focus {
 input[type=password]:focus {
   outline: none;
 }
-
 //________________________menu___________________
 .menu{
   
@@ -215,7 +193,6 @@ input[type=password]:focus {
   top: 20%;
   right:0;
   display: none;
-  // z-index: 30;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -223,25 +200,18 @@ input[type=password]:focus {
   &__filter
   {
     background: rgba(255, 255, 255, 0.4);
-    // opacity: 50%;
     height: 100%;
     width: 100%;
-    // backdrop-filter: blur(20px);
     position: absolute;
     z-index: 550;
     top: 0;
     right:0;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
   }
   &__photo
   {
-    // margin-top: 2rem;
-    // padding-left: 5rem;
-    // display: flex;
-    // justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,21 +226,17 @@ input[type=password]:focus {
   }
 &__user
 {
-  // padding-left: 3.5rem;
   font-size: 2rem;
   text-align: center;
   font-weight: 600;
 }
 &__profil
   {
-    // position: absolute;
-    // z-index: 30;
     border-radius: 1rem;
     background-color: $primary-color;
     background: $gradientYellow;
     color: white;
     font-size: 1.5rem;
-    // border: 1px solid $primary-color;
     border: none;
     height: 2.5rem;
     width: 10rem;
@@ -291,11 +257,6 @@ input[type=password]:focus {
       margin-top: 1rem;
     }
   }
-// &__link__bloc
-// {
-//   margin-top: 8rem;
-  
-// }
 &__link
 {
   &__letters
@@ -326,13 +287,24 @@ list-style-type: none;
 margin-left: -3rem;
 };
 }
-.leaflet-container { 
-  // width: 100%; 
-  // height: 100vh;
-  // z-index: 1;
-  position: relative;
+
+/*===================================*/
+/* ______________ MAP _______________*/
+/*===================================*/
+.map_container {
+height: 70%;
+position: absolute;
+top: 20%;
+bottom: 10%;
+width: 100%;
 }
-/* MARKER CLUSTERS */
+.leaflet-container { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/*_________________ MARKER CLUSTERS ____________ */
  .custom-marker-cluster-single {
    background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
  }
@@ -361,7 +333,6 @@ margin-left: -3rem;
    background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
  }
 
-
 //===========================================================================
 //====================== REGISTER ========================
 
@@ -388,16 +359,13 @@ margin-left: -3rem;
 }
 
 .register_field_form {
-
   width: 275px;
-
   label {
     display: block;
     margin-left: 10px;
     margin-bottom: 5px;
     display: none;
   }
-
   input {
     height: 50px;
     width: 100%;
@@ -411,7 +379,6 @@ margin-left: -3rem;
     cursor: pointer; 
     transition: all 0.5s ease-out;
   }
-
   input:hover {
     border: 3px solid rgb(148, 148, 148);
   }
@@ -434,17 +401,6 @@ margin-left: -3rem;
         background: linear-gradient(90deg,  rgba(177,142,29,1)0%, rgba(198,159,32,1) 35%, rgba(255,204,41,1) 100%);
         cursor:pointer;
       }
-  // .btn{
-  //   border-radius: 15px;
-  //   font-size: larger;
-  //   text-align: center;
-  //   padding: 10px;
-  //   padding-left: 15px;
-  //   padding-right: 15px;
-  //   color: white;
-  //   background-color: #B08D00;
-  //   border: solid black 1px;
-  // }
   }
 }
 
@@ -452,12 +408,13 @@ margin-left: -3rem;
 //================= LeadBoard =============================
 
 .leaderBoard-main{
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+      top: 30%;
+      position: relative;
 }
-
 .leaderBoard-box {
   width: 300px;
   height: 600px;
@@ -468,28 +425,23 @@ margin-left: -3rem;
   border-radius: 25px;
   box-shadow:  0px 0px 25px grey;
 }
-
 table {
   width: 250px;
   height: 500px;
   background-color: #f1f1f1;
   border-collapse: collapse;
 }
-
 .leaderBoard-title {
   color: #008869;
   font-size: 24px;
 }
-
 .leaderBoard-subtitle {
   color: #08bd9c;
   font-weight: bold;
 }
-
 tr {
   text-align: center;
 }
-
 .leaderBoard-rows {
   text-align: center;
   border-bottom: 1px solid #333;
