@@ -8,6 +8,7 @@
 $body-color: white;
 $primary-color: #FFCC29;
 $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
+$test: blue; 
 
 body {
   font-family:Arial, Helvetica, sans-serif;
@@ -297,6 +298,7 @@ list-style-type: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url("./images/mapground.jpg");
 
   .register_field_picture{
     width: 150px;
@@ -308,13 +310,14 @@ list-style-type: none;
     img{
       border-radius: 50%;
       background-color: rgb(209, 209, 209);
-      margin: 5px;      
+      margin: 5px;  
+      z-index: 99;    
     }
   }
 }
 
 .register_field_form {
-
+  z-index: 100;
   width: 275px;
 
   label {
@@ -335,32 +338,39 @@ list-style-type: none;
     padding-left: 10px;
     outline-style: none;
     cursor: pointer; 
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
+    
+    &:hover {
+      border: 3px solid rgb(148, 148, 148);
+    }
+    
+    &:focus {
+      background: rgb(231, 230, 230);
+      border: 3px solid rgb(148, 148, 148);
+    }
   }
-
-  input:hover {
-    border: 3px solid rgb(148, 148, 148);
-  }
-
+  
   .register_field_button{
     display: flex;
     justify-content: center;
+    
+    input{
+      border-radius: 25px;
+      color: white;
+      width: 75%;
+      background: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
+      text-transform: uppercase;
+      font-size: larger;
+      font-weight: 700;
+      cursor:pointer;
+      transition: all 0.5s ease-out;
 
-      input{
-        border-radius: 25px;
-        color: white;
-        width: 75%;
-        background: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1) 35%, rgba(177,142,29,1) 100%);
-        text-transform: uppercase;
-        font-size: larger;
-        font-weight: 700;
-      }
-      
-      :hover{
-        transition: all 0.5s ease-out;
+      &:hover{
         background: linear-gradient(90deg,  rgba(177,142,29,1)0%, rgba(198,159,32,1) 35%, rgba(255,204,41,1) 100%);
-        cursor:pointer;
       }
+
+    }
+      
   }
 }
 
@@ -372,6 +382,7 @@ list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("./images/mapground.jpg");
 }
 
 .leaderBoard-box {

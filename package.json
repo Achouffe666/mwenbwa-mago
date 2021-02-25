@@ -61,6 +61,7 @@
     "express": "^4.17.1",
     "leaflet": "^1.7.1",
     "mongoose": "^5.11.15",
+    "react-color": "^2.19.3",
     "react-leaflet": "^3.1.0",
     "react-leaflet-markercluster": "^3.0.0-rc1",
     "react-router-dom": "^5.2.0",
