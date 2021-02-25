@@ -2,7 +2,8 @@ import React, {Component} from "react";
 import {Marker} from "react-leaflet"; // MapContainer, TileLayer
 import L from "leaflet";
 import fleatIcon from "../../assets/images/leaf.png";
-import treedata from "../../data/treedata.json";
+//import treedata from "../../data/treedata.json";
+import axios from "axios";
 
 const fleat_Icon = L.icon({
     iconUrl: fleatIcon,
@@ -12,11 +13,44 @@ const fleat_Icon = L.icon({
 });
 
 class MarkerGeo extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            error: null,
+            isLoaded: false,
+            datas: [],
+        };
+    }
+
+    componentDidMount() {
+        axios.get("/testTree").then(
+            result => {
+                console.log(result.data);
+                this.setState({
+                    isLoaded: true,
+                    datas: result.data,
+                });
+            },
+            error => {
+                this.setState({
+                    isLoaded: true,
+                    error,
+                });
+            },
+        );
+    }
+
     render() {
-        return treedata.map(item => (
+        const {error, isLoaded, datas} = this.state;
+        if (error) {
+            return <div>{"Erreur : {error.message}"}</div>;
+        } else if (!isLoaded) {
+            return <div>{"Chargement…"}</div>;
+        }
+        return datas.map(data => (
             <Marker
-                position={item.location.coordinates}
-                key={item._id.$oid}
+                position={data.location.coordinates}
+                key={data._id}
                 icon={fleat_Icon}
             />
         ));
