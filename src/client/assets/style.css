@@ -290,6 +290,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/mapground.jpg");
+
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -336,19 +341,21 @@ footer {
   padding-left: 10px;
   outline-style: none;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+
+  transition: all 0.3s ease-out;
 }
 .register_field_form input:hover {
+  border: 3px solid #949494;
+}
+.register_field_form input:focus {
+  background: #e7e6e6;
   border: 3px solid #949494;
 }
 .register_field_form .register_field_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .register_field_form .register_field_button input {
   border-radius: 25px;
@@ -359,7 +366,11 @@ footer {
   text-transform: uppercase;
   font-size: larger;
   font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
+
 .register_field_form .register_field_button :hover {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -373,12 +384,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/mapground.jpg");
 }
 
 .leaderBoard-box {
