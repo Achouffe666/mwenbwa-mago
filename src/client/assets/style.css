@@ -252,6 +252,8 @@ footer {
   justify-content: center;
   align-items: center;
   background: url("./images/mapground.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .register_field_main .register_field_picture {
   width: 150px;
@@ -300,7 +302,6 @@ footer {
 .register_field_form .register_field_button {
   display: flex;
   justify-content: center;
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .register_field_form .register_field_button input {
   border-radius: 25px;
@@ -323,6 +324,8 @@ footer {
   justify-content: center;
   align-items: center;
   background: url("./images/mapground.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .leaderBoard-box {

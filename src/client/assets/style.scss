@@ -298,6 +298,9 @@ list-style-type: none;
   justify-content: center;
   align-items: center;
   background: url("./images/mapground.jpg");
+  background-size: cover;
+  background-position: center;
+  
 
   .register_field_picture{
     width: 150px;
@@ -382,6 +385,8 @@ list-style-type: none;
   justify-content: center;
   align-items: center;
   background: url("./images/mapground.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .leaderBoard-box {
