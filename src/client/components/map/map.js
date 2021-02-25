@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import {Marker, MapContainer, TileLayer, FeatureGroup} from "react-leaflet";
-//import L from "leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import MarkerClusterGroup from "react-leaflet-markercluster";
@@ -11,16 +11,19 @@ const MyMap = () => {
     const groupRef = useRef();
     const clusterRef = useRef();
 
-    // const createPopups = (feature = {}, layer) => {
-    //     const { properties = {} } = feature
-    //     const { address, price, bedrooms, bathrooms } = properties
-    //     const popup = L.popup()
-    //     const html = `
-    //       <div class="popup-container">
-    //       </div>`
-    //       popup.setContent(html)
-    //       layer.bindPopup(popup)
-    //     }
+    const createPopups = (feature = {}, layer) => {
+        const {properties = {}} = feature;
+        const {height, latinName} = properties;
+        const popup = L.popup();
+        const html = `
+          <div class="popup-container">
+            <li><strong>Name:</strong> ${latinName.toString()}</li>
+            <li><strong>Height:</strong> ${height.toString()}</li>
+            <button>{"Buy now!"}</button>
+          </div>`;
+        popup.setContent(html);
+        layer.bindPopup(popup);
+    };
 
     return (
         <div>
@@ -39,7 +42,7 @@ const MyMap = () => {
                 <FeatureGroup ref={groupRef} name={"Homes"}>
                     <Marker position={position} />
                     <MarkerClusterGroup ref={clusterRef}>
-                        <MarkerGeo />
+                        <MarkerGeo onEachFeature={createPopups} />
                     </MarkerClusterGroup>
                 </FeatureGroup>
             </MapContainer>
