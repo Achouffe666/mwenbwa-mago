@@ -21,15 +21,19 @@ body {
   background-image: url("./images/groot_original.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .navbar {
   background-color: #FFCC29;
+  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
   font-size: 2rem;
   width: 100%;
   height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -77,9 +81,11 @@ body {
 
 footer {
   background-color: #FFCC29;
+  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   height: 5rem;
-  width: 100%; }
+  width: 100%;
+}
 
 .picture__home {
   height: 45rem;
@@ -290,7 +296,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
 }
 .register_field_main .register_field_picture {
   width: 150px;
@@ -305,11 +310,9 @@ footer {
   border-radius: 50%;
   background-color: #d1d1d1;
   margin: 5px;
-  z-index: 99;
 }
 
 .register_field_form {
-  z-index: 100;
   width: 275px;
 }
 .register_field_form label {
@@ -363,8 +366,8 @@ footer {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   background: -webkit-gradient(linear, left top, right top, from(#b18e1d), color-stop(35%, #c69f20), to(#ffcc29));
-
   background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
+  cursor: pointer;
 }
 
 .leaderBoard-main {
@@ -399,18 +402,22 @@ table {
   width: 250px;
   height: 500px;
   background-color: #f1f1f1;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
 .leaderBoard-title {
   color: #008869;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 .leaderBoard-subtitle {
   color: #08bd9c;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 tr {
-  text-align: center; }
+  text-align: center;
+}
 
 .leaderBoard-rows {
   text-align: center;
