@@ -21,10 +21,12 @@ body {
   background-image: url("./images/groot_original.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .navbar {
   background-color: #FFCC29;
+  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
   font-size: 2rem;
@@ -32,7 +34,6 @@ body {
   height: 7rem;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
@@ -77,9 +78,11 @@ body {
 
 footer {
   background-color: #FFCC29;
+  background: -webkit-gradient(linear, left top, right top, from(#ffcc29), color-stop(35%, #c69f20), to(#b18e1d));
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   height: 5rem;
-  width: 100%; }
+  width: 100%;
+}
 
 .picture__home {
   height: 45rem;
@@ -156,7 +159,8 @@ footer {
 .icon__password {
   font-size: 1.5rem;
   color: grey;
-  margin: auto; }
+  margin: auto;
+}
 
 .menu {
   font-family: Arial, Helvetica, sans-serif;
@@ -242,29 +246,37 @@ footer {
 .leaflet-container {
   width: 100%;
   height: 100vh;
-  z-index: 1; }
+  z-index: 1;
+}
 
 /* MARKER CLUSTERS */
 .custom-marker-cluster-single {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6)); }
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
 
 .custom-marker-cluster-single div {
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6)); }
+  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+}
 
 .custom-marker-cluster-small {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6)); }
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
 
 .custom-marker-cluster-small div {
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6)); }
+  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+}
 
 .custom-marker-cluster-medium {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6)); }
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
 
 .custom-marker-cluster-medium div {
-  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6)); }
+  background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
+}
 
 .custom-marker-cluster-large {
-  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6)); }
+  background-color: var(--custom-cluster-bg-1, rgba(25, 25, 112, 0.6));
+}
 
 .custom-marker-cluster-large div {
   background-color: var(--custom-cluster-bg-2, rgba(18, 18, 83, 0.6));
@@ -388,18 +400,22 @@ table {
   width: 250px;
   height: 500px;
   background-color: #f1f1f1;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
 .leaderBoard-title {
   color: #008869;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 .leaderBoard-subtitle {
   color: #08bd9c;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 tr {
-  text-align: center; }
+  text-align: center;
+}
 
 .leaderBoard-rows {
   text-align: center;
