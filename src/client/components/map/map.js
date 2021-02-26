@@ -1,6 +1,5 @@
 import React, {useRef} from "react";
 import {Marker, MapContainer, TileLayer, FeatureGroup} from "react-leaflet";
-//import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import MarkerClusterGroup from "react-leaflet-markercluster";
@@ -10,17 +9,6 @@ const MyMap = () => {
     const position = [50.6446, 5.57341];
     const groupRef = useRef();
     const clusterRef = useRef();
-
-    // const createPopups = (feature = {}, layer) => {
-    //     const { properties = {} } = feature
-    //     const { address, price, bedrooms, bathrooms } = properties
-    //     const popup = L.popup()
-    //     const html = `
-    //       <div class="popup-container">
-    //       </div>`
-    //       popup.setContent(html)
-    //       layer.bindPopup(popup)
-    //     }
 
     return (
         <div>

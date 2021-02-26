@@ -29,4 +29,4 @@ const treeSchema = new mongoose.Schema({
     },
 });
 
-export default mongoose.model("Tree", treeSchema);
+module.exports = mongoose.model("Trees", treeSchema);

@@ -388,8 +388,11 @@ footer {
   justify-content: center;
   align-items: center;
   background: url("./images/mapground.jpg");
+<<<<<<< HEAD
   background-size: cover;
   background-position: center;
+=======
+>>>>>>> 3cc42ffe24eb344d061c95911d17c9fe679a836c
 }
 
 .leaderBoard-box {
