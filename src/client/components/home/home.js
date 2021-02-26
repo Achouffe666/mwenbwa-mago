@@ -7,7 +7,7 @@ const Picture = () => (
         <form action={"/"} method={"POST"} className={"picture__home__bloc"}>
             <input
                 type={"text"}
-                name={"firstname"}
+                name={"username"}
                 className={"picture__home__input"}
                 placeholder={"Username"}
             />

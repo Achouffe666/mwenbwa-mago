@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import uniqueValidator from "mongoose-unique-validator";
 
 const RegisterSchema = new mongoose.Schema({
     username: {type: String, unique: true},
@@ -11,5 +12,7 @@ const RegisterSchema = new mongoose.Schema({
     trees: [Number],
     userColor: {type: String, default: "#fff"},
 });
+
+RegisterSchema.plugin(uniqueValidator);
 
 module.exports = mongoose.model("Register", RegisterSchema);

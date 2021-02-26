@@ -9,7 +9,7 @@ import express from "express";
 import path from "path";
 import mongoose from "mongoose";
 import route from "../server/routes/user";
-import route2 from "../server/routes/tree";
+import routeTree from "../server/routes/tree";
 import bodyParser from "body-parser";
 
 const uri =
@@ -28,8 +28,9 @@ app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({extended: true}));
+
 app.use("/", route);
-app.use("/", route2);
+app.use("/", routeTree);
 
 app.get("/hello", (req, res) => {
     //console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
