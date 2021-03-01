@@ -25,9 +25,8 @@ $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1
   background-size: cover;
   background-position: center;
   // overflow: hidden;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 100vh;
+  width: 100vw;
 }
 
 //__________________header______________
@@ -37,7 +36,7 @@ $gradientYellow: linear-gradient(90deg, rgba(255,204,41,1) 0%, rgba(198,159,32,1
   background: $gradientYellow;
   color: white;
   font-size: 2.5rem;
-  width: 100%;
+  width: 100vw;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -84,8 +83,6 @@ footer
   background: $gradientYellow;
   height: 10%;
   width: 100%;
-  position: absolute;
-  bottom: 0;  
 }
 
 //_____________________________________home____________________________
@@ -342,9 +339,6 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("./images/mapground.jpg");
-  background-size: cover;
-  background-position: center;
   
 
   .register_field_picture{
@@ -422,17 +416,24 @@ width: 100%;
 //=================================================
 //================= LeadBoard =====================
 
-.leaderBoard-main{
-  // height: 100vh;
+.leaderBoard-full{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center;
-  top: 30%;
-  position: relative;
+  // background-position: center;
+  // position: relative;
   background: url("./images/mapground.jpg");
   background-size: cover;
+  width: 100vw;
+  height: 150vh;
 }
+
+.leaderBoard-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .leaderBoard-box {
   width: 300px;
   height: 600px;

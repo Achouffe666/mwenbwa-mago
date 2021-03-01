@@ -19,9 +19,8 @@ body {
   background-image: url("./images/groot_original.jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 100vh;
+  width: 100vw;
 }
 
 .navbar {
@@ -29,7 +28,7 @@ body {
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   color: white;
   font-size: 2.5rem;
-  width: 100%;
+  width: 100vw;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -69,8 +68,6 @@ footer {
   background: linear-gradient(90deg, #ffcc29 0%, #c69f20 35%, #b18e1d 100%);
   height: 10%;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 .picture__home {
@@ -304,9 +301,6 @@ input[type=password]:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("./images/mapground.jpg");
-  background-size: cover;
-  background-position: center;
 }
 .register_field_main .register_field_picture {
   width: 150px;
@@ -371,15 +365,20 @@ input[type=password]:focus {
   background: linear-gradient(90deg, #b18e1d 0%, #c69f20 35%, #ffcc29 100%);
 }
 
+.leaderBoard-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/mapground.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 150vh;
+}
+
 .leaderBoard-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center;
-  top: 30%;
-  position: relative;
-  background: url("./images/mapground.jpg");
-  background-size: cover;
 }
 
 .leaderBoard-box {
